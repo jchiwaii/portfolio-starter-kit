@@ -1,21 +1,36 @@
-import { BlogPosts } from 'app/components/posts'
-
 export default function Page() {
   return (
     <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
-      </h1>
+      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">chiwai</h1>
       <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
+        Based actuarial graduate specialized in finding solutions between data
+        and the web.
       </p>
+
       <div className="my-8">
-        <BlogPosts />
+        <h2 className="mb-4 text-xl font-semibold">About</h2>
+        <div className="space-y-4 text-sm">
+          <p>
+            Nothing is too hard to crack. I'm driven by a chronic curiosity and
+            a passion for telling stories through pictures and data. Currently,
+            Fullstack.
+          </p>
+
+          <p>Building some exciting projects.</p>
+
+          <p>
+            I am open to collaborations and long-term engagements for projects
+            that involve Gen AI and making AI useful. Avid reader.
+          </p>
+
+          <p>
+            Trust me, it's hard writing a bio. But we can talk about anything to
+            very many things.
+          </p>
+
+          <p>Ardent love of African Literature.</p>
+        </div>
       </div>
     </section>
-  )
+  );
 }
