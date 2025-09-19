@@ -1,7 +1,7 @@
 export default function Page() {
   return (
     <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">chiwai</h1>
+      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">chiwai </h1>
       <p className="mb-4">
         Based actuarial graduate specialized in finding solutions between data
         and the web.
@@ -25,10 +25,11 @@ export default function Page() {
 
           <p>
             Trust me, it's hard writing a bio. But we can talk about anything to
-            very many things.
+            very many things. Web3 is the future, and it is here
           </p>
 
           <p>Ardent love of African Literature.</p>
+          <p>Kingdom believer. Heaven bound.</p>
         </div>
       </div>
     </section>
