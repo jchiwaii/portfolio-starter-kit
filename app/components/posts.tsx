@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { formatDate, getBlogPosts } from "app/blog/utils";
+import { getBlogPosts } from "app/blog/utils";
 
 export function BlogPosts() {
   let allBlogs = getBlogPosts();
@@ -7,33 +7,37 @@ export function BlogPosts() {
     return null;
   }
 
+  let posts = allBlogs.sort((a, b) => {
+    if (new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)) {
+      return -1;
+    }
+    return 1;
+  });
+
   return (
-    <div>
-      {allBlogs
-        .sort((a, b) => {
-          if (
-            new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)
-          ) {
-            return -1;
-          }
-          return 1;
-        })
-        .map((post) => (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {posts.map((post) => {
+        const imageSrc = `/assets/${post.slug}.png`;
+
+        return (
           <Link
             key={post.slug}
-            className="flex flex-col space-y-1 mb-4"
             href={`/blog/${post.slug}`}
+            className="border border-neutral-200 dark:border-neutral-800 rounded-lg overflow-hidden group"
           >
-            <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2">
-              <p className="text-neutral-600 dark:text-neutral-400 w-[100px] tabular-nums">
-                {formatDate(post.metadata.publishedAt, false)}
-              </p>
-              <p className="text-neutral-900 dark:text-neutral-100 tracking-tight">
+            <img
+              src={imageSrc}
+              alt={post.metadata.title}
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-4">
+              <h3 className="font-medium tracking-tight group-hover:underline">
                 {post.metadata.title}
-              </p>
+              </h3>
             </div>
           </Link>
-        ))}
+        );
+      })}
     </div>
   );
 }

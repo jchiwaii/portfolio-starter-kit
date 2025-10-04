@@ -12,22 +12,12 @@ export default function Page() {
         <div className="space-y-4 text-sm">
           <p>
             Nothing is too hard to crack. I'm driven by a chronic curiosity and
-            a passion for telling stories through pictures and data. Currently,
-            Fullstack.
+            a passion for telling stories through code, pictures and data.
           </p>
-
-          <p>Building some exciting projects.</p>
-
           <p>
-            I am open to collaborations and long-term engagements for projects
-            that involve Gen AI and making AI useful. Avid reader.
+            Sometimes I write, sometimes I code, other times I am behind a lens,
+            and most of the times, I am mostly alone, with my solitary mind.
           </p>
-
-          <p>
-            Trust me, it's hard writing a bio. But we can talk about anything to
-            very many things. Web3 is the future, and it is here
-          </p>
-
           <p>Ardent love of African Literature.</p>
           <p>Kingdom believer. Heaven bound.</p>
         </div>
