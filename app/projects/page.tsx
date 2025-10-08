@@ -7,6 +7,27 @@ export default function ProjectsPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="border border-neutral-200 dark:border-neutral-800 rounded-lg overflow-hidden">
             <img
+              src="/assets/crepe.png"
+              alt="CREPE meme coin project"
+              className="w-full h-40 object-cover"
+            />
+            <div className="p-4">
+              <h3 className="font-medium mb-2">CREPE (BNB Meme Coin)</h3>
+              <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-3">
+                CREPE Coin - BNB Chain meme coin website. The next SHIB?
+              </p>
+              <a
+                href="https://crepebnb.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm underline hover:no-underline"
+              >
+                Live Demo →
+              </a>
+            </div>
+          </div>
+          <div className="border border-neutral-200 dark:border-neutral-800 rounded-lg overflow-hidden">
+            <img
               src="/assets/sql-ace.png"
               alt="SQLAce project"
               className="w-full h-42 object-cover"
