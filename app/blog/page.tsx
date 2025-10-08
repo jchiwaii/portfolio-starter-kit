@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <section>
       <h1 className="font-semibold text-2xl mb-8 tracking-tighter">
-        Random stories of a solitary mind
+        Stories and stories
       </h1>
       {/* If there are no posts, render nothing to avoid ENOENT in builds */}
       <BlogPosts />
