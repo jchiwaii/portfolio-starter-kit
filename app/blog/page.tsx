@@ -6,9 +6,7 @@ export const metadata = {
 export default function Page() {
   return (
     <section>
-      <h1 className="font-semibold text-2xl mb-8 tracking-tighter">
-        Musings
-      </h1>
+      <h1 className="font-semibold text-2xl mb-8 tracking-tighter">Musings</h1>
       <p className="text-neutral-600 dark:text-neutral-400 mb-8">
         I write about various topics across different platforms.
       </p>
@@ -23,11 +21,11 @@ export default function Page() {
             className="group"
           >
             <h2 className="text-lg font-medium mb-1 group-hover:underline">
-              Random thoughts and Stories →
+              Random boring thoughts →
             </h2>
           </a>
           <p className="text-sm text-neutral-600 dark:text-neutral-400">
-            Personal essays, reflections, and creative writing
+            This is like my public journal.
           </p>
         </div>
 
@@ -44,7 +42,7 @@ export default function Page() {
             </h2>
           </a>
           <p className="text-sm text-neutral-600 dark:text-neutral-400">
-            Technical articles on data science, analytics, and engineering
+            Everything data related.{" "}
           </p>
         </div>
       </div>

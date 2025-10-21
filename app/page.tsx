@@ -16,7 +16,7 @@ export default function Page() {
           </p>
           <p>
             Sometimes I write, sometimes I code, other times I am behind a lens,
-            and most of the times, I am mostly alone, with my solitary mind.
+            and most of the times, it's me and me.
           </p>
           <p>Ardent love of African Literature.</p>
           <p>Kingdom believer. Heaven bound.</p>

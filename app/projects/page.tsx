@@ -3,21 +3,21 @@ export default function ProjectsPage() {
     <section>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">Projects</h1>
 
-      {/* Data Projects */}
+      {/* Ongoing Projects */}
       <div className="my-8">
-        <h2 className="mb-4 text-xl font-semibold">Data</h2>
+        <h2 className="mb-4 text-xl font-semibold">Ongoing Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="border border-neutral-200 dark:border-neutral-800 rounded-lg overflow-hidden">
             <img
               src="/assets/sql-ace.png"
               alt="SQLAce project"
-              className="w-full h-42 object-cover"
+              className="w-full h-48 object-contain"
             />
             <div className="p-4">
               <h3 className="font-medium mb-2">SQLAce</h3>
               <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-3">
-                A platform for mastering SQL for beginners, to interview
-                questions.
+                A platform for mastering SQL for beginners, and also help with
+                interview questions.
               </p>
               <a
                 href="https://sql-ace.netlify.app/"
@@ -34,7 +34,7 @@ export default function ProjectsPage() {
             <img
               src="/assets/linspo.png"
               alt="Linspo UI project"
-              className="w-full h-48 object-cover"
+              className="w-full h-48 object-contain"
             />
             <div className="p-4">
               <h3 className="font-medium mb-2">Linspo UI</h3>
@@ -57,17 +57,23 @@ export default function ProjectsPage() {
                   rel="noopener noreferrer"
                   className="text-sm underline hover:no-underline"
                 >
-                  GitHub →
+                  Source Code →
                 </a>
               </div>
             </div>
           </div>
+        </div>
+      </div>
 
+      {/* Data Projects */}
+      <div className="my-8">
+        <h2 className="mb-4 text-xl font-semibold">Data</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="border border-neutral-200 dark:border-neutral-800 rounded-lg overflow-hidden">
             <img
               src="/assets/time-series.jpeg"
               alt="Time Series Library project"
-              className="w-full h-48 object-cover"
+              className="w-full h-48 object-contain"
             />
             <div className="p-4">
               <h3 className="font-medium mb-2">Time Series Library</h3>
@@ -96,7 +102,7 @@ export default function ProjectsPage() {
             <img
               src="/assets/crepe.png"
               alt="CREPE meme coin project"
-              className="w-full h-40 object-cover"
+              className="w-full h-48 object-contain"
             />
             <div className="p-4">
               <h3 className="font-medium mb-2">CREPE (BNB Meme Coin)</h3>
@@ -122,9 +128,42 @@ export default function ProjectsPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="border border-neutral-200 dark:border-neutral-800 rounded-lg overflow-hidden">
             <img
+              src="/assets/chatty.png"
+              alt="Chatty messaging app"
+              className="w-full h-48 object-contain"
+            />
+            <div className="p-4">
+              <h3 className="font-medium mb-2">Chatty</h3>
+              <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-3">
+                A fullstack, realtime messaging app built for seamless chat
+                communication.
+              </p>
+              <div className="flex gap-4">
+                <a
+                  href="https://chatty-fullstack.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm underline hover:no-underline"
+                >
+                  Live Demo →
+                </a>
+                <a
+                  href="https://github.com/jchiwaii/chatty-fullstack"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm underline hover:no-underline"
+                >
+                  Source Code →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="border border-neutral-200 dark:border-neutral-800 rounded-lg overflow-hidden">
+            <img
               src="/assets/kanga.png"
               alt="Kanga project"
-              className="w-full h-40 object-cover"
+              className="w-full h-48 object-contain"
             />
             <div className="p-4">
               <h3 className="font-medium mb-2">Kanga</h3>
@@ -157,7 +196,7 @@ export default function ProjectsPage() {
             <img
               src="/assets/netflix.png"
               alt="Netflix Clone project"
-              className="w-full h-35 object-cover"
+              className="w-full h-48 object-contain"
             />
             <div className="p-4">
               <h3 className="font-medium mb-2">Netflix Clone</h3>
