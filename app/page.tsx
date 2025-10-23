@@ -15,8 +15,16 @@ export default function Page() {
             a passion for telling stories through code, pictures and data.
           </p>
           <p>
+            Building scalable creative solutions that at least go beyond the
+            hype.
+          </p>
+          <p>
             Sometimes I write, sometimes I code, other times I am behind a lens,
             and most of the times, it's me and me.
+          </p>
+          <p>
+            Open to long term meaningful projects that involve data, AI, web2,
+            and web3.
           </p>
           <p>Ardent love of African Literature.</p>
           <p>Kingdom believer. Heaven bound.</p>
