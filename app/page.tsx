@@ -20,14 +20,14 @@ export default function Page() {
           </p>
           <p>
             Sometimes I write, sometimes I code, other times I am behind a lens,
-            and most of the times, it's me and me.
+            and most of the times, I enjoy my own company.
           </p>
           <p>
             Open to long term meaningful projects that involve data, AI, web2,
             and web3.
           </p>
           <p>Ardent love of African Literature.</p>
-          <p>Kingdom believer. Heaven bound.</p>
+          <p>Perfect mind. Excellent Spirit.</p>
         </div>
       </div>
     </section>
