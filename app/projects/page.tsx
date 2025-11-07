@@ -79,7 +79,8 @@ export default function ProjectsPage() {
               <h3 className="font-medium mb-2">Time Series Library</h3>
               <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-3">
                 Building a time series library with rust for timeseries
-                things/models like ARIMA, regression, all that.
+                things/models like ARIMA, regression, all that. Code in
+                progress.
               </p>
               <a
                 href="https://github.com/jchiwaii/timeseries"
@@ -89,6 +90,39 @@ export default function ProjectsPage() {
               >
                 View Code →
               </a>
+            </div>
+          </div>
+
+          <div className="border border-neutral-200 dark:border-neutral-800 rounded-lg overflow-hidden">
+            <img
+              src="/assets/forecast.png"
+              alt="ARIMA Weather Forecast project"
+              className="w-full h-48 object-contain"
+            />
+            <div className="p-4">
+              <h3 className="font-medium mb-2">ARIMA Weather Forecast</h3>
+              <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-3">
+                Time series forecasting of Nairobi's temperature using ARIMA
+                model, predicting weather patterns for the next 10 days.
+              </p>
+              <div className="flex gap-4">
+                <a
+                  href="https://medium.com/@chiwai.kiriba/what-nairobis-weather-taught-me-about-time-series-forecasting-aaade4711b62"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm underline hover:no-underline"
+                >
+                  Read Article →
+                </a>
+                <a
+                  href="https://github.com/jchiwaii/ARIMA-Weather-Forecast"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm underline hover:no-underline"
+                >
+                  Source Code →
+                </a>
+              </div>
             </div>
           </div>
 
