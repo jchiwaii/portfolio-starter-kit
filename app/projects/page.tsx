@@ -112,7 +112,7 @@ export default function ProjectsPage() {
                   rel="noopener noreferrer"
                   className="text-sm underline hover:no-underline"
                 >
-                  Read Article →
+                  Read Report →
                 </a>
                 <a
                   href="https://github.com/jchiwaii/ARIMA-Weather-Forecast"
@@ -195,6 +195,39 @@ export default function ProjectsPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="border border-neutral-200 dark:border-neutral-800 rounded-lg overflow-hidden">
             <img
+              src="/assets/bloodline.png"
+              alt="Bloodline blood donation platform"
+              className="w-full h-48 object-contain"
+            />
+            <div className="p-4">
+              <h3 className="font-medium mb-2">Bloodline</h3>
+              <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-3">
+                Fullstack blood donation management system connecting donors
+                with recipients through an admin-approved workflow.
+              </p>
+              <div className="flex gap-4">
+                <a
+                  href="https://blood-donations-indol.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm underline hover:no-underline"
+                >
+                  Live Demo →
+                </a>
+                <a
+                  href="https://github.com/jchiwaii/blood-donations"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm underline hover:no-underline"
+                >
+                  Source Code →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="border border-neutral-200 dark:border-neutral-800 rounded-lg overflow-hidden">
+            <img
               src="/assets/chatty.png"
               alt="Chatty messaging app"
               className="w-full h-48 object-contain"
@@ -202,7 +235,8 @@ export default function ProjectsPage() {
             <div className="p-4">
               <h3 className="font-medium mb-2">Chatty</h3>
               <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-3">
-                A fullstack, realtime messaging app built for seamless chat
+                A fullstack, realtime messaging app featuring instant messaging
+                and a modern, responsive interface for seamless chat
                 communication.
               </p>
               <div className="flex gap-4">
@@ -216,39 +250,6 @@ export default function ProjectsPage() {
                 </a>
                 <a
                   href="https://github.com/jchiwaii/chatty-fullstack"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm underline hover:no-underline"
-                >
-                  Source Code →
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="border border-neutral-200 dark:border-neutral-800 rounded-lg overflow-hidden">
-            <img
-              src="/assets/kanga.png"
-              alt="Kanga project"
-              className="w-full h-48 object-contain"
-            />
-            <div className="p-4">
-              <h3 className="font-medium mb-2">Kanga</h3>
-              <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-3">
-                A bespoke tailoring website celebrating Swahili elegance with
-                modern design.
-              </p>
-              <div className="flex gap-4">
-                <a
-                  href="https://kanga.netlify.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm underline hover:no-underline"
-                >
-                  Live Demo →
-                </a>
-                <a
-                  href="https://github.com/jchiwaii/kanga"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm underline hover:no-underline"
@@ -282,6 +283,39 @@ export default function ProjectsPage() {
                 </a>
                 <a
                   href="https://github.com/jchiwaii/netflixCK"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm underline hover:no-underline"
+                >
+                  Source Code →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="border border-neutral-200 dark:border-neutral-800 rounded-lg overflow-hidden">
+            <img
+              src="/assets/kanga.png"
+              alt="Kanga project"
+              className="w-full h-48 object-contain"
+            />
+            <div className="p-4">
+              <h3 className="font-medium mb-2">Kanga</h3>
+              <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-3">
+                A bespoke tailoring website celebrating Swahili elegance with
+                modern design.
+              </p>
+              <div className="flex gap-4">
+                <a
+                  href="https://kanga.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm underline hover:no-underline"
+                >
+                  Live Demo →
+                </a>
+                <a
+                  href="https://github.com/jchiwaii/kanga"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm underline hover:no-underline"
