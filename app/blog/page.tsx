@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <section>
       <h1 className="font-semibold text-2xl mb-8 tracking-tighter">Musings</h1>
-      <p className="text-neutral-600 dark:text-neutral-400 mb-8">
+      <p className="mb-8">
         I write about various topics across different platforms.
       </p>
 
@@ -20,11 +20,11 @@ export default function Page() {
             rel="noopener noreferrer"
             className="group"
           >
-            <h2 className="text-lg font-medium mb-1 group-hover:underline">
+            <h2 className="text-lg font-medium mb-1 underline">
               Random boring thoughts →
             </h2>
           </a>
-          <p className="text-sm text-neutral-600 dark:text-neutral-400">
+          <p className="text-sm">
             This is like my public journal.
           </p>
         </div>
@@ -37,11 +37,11 @@ export default function Page() {
             rel="noopener noreferrer"
             className="group"
           >
-            <h2 className="text-lg font-medium mb-1 group-hover:underline">
+            <h2 className="text-lg font-medium mb-1 underline">
               Data →
             </h2>
           </a>
-          <p className="text-sm text-neutral-600 dark:text-neutral-400">
+          <p className="text-sm">
             Everything data related.{" "}
           </p>
         </div>

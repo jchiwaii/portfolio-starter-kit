@@ -5,8 +5,37 @@ export default function ProjectsPage() {
 
       {/* Ongoing Projects */}
       <div className="my-8">
-        <h2 className="mb-4 text-xl font-semibold">Ongoing Projects</h2>
+        <h2 className="mb-4 text-xl font-semibold flex items-center gap-2">
+          Ongoing Projects
+          <span className="relative flex h-3 w-3">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+          </span>
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="border border-neutral-200 dark:border-neutral-800 rounded-lg overflow-hidden">
+            <img
+              src="/assets/oyaah.png"
+              alt="Oyaah automatic EDA platform"
+              className="w-full h-48 object-contain"
+            />
+            <div className="p-4">
+              <h3 className="font-medium mb-2">Oyaah</h3>
+              <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-3">
+                Automatic EDA platform that turns spreadsheets into insights in
+                30 seconds. Upload CSV or Excel files and get instant analysis
+              </p>
+              <a
+                href="https://www.oyaah.cloud/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm underline hover:no-underline"
+              >
+                Live Demo →
+              </a>
+            </div>
+          </div>
+
           <div className="border border-neutral-200 dark:border-neutral-800 rounded-lg overflow-hidden">
             <img
               src="/assets/sql-ace.png"
@@ -17,7 +46,7 @@ export default function ProjectsPage() {
               <h3 className="font-medium mb-2">SQLAce</h3>
               <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-3">
                 A platform for mastering SQL for beginners, and also help with
-                interview questions.
+                interview questions. Still in the kitchen
               </p>
               <a
                 href="https://sql-ace.netlify.app/"
@@ -67,7 +96,7 @@ export default function ProjectsPage() {
 
       {/* Data Projects */}
       <div className="my-8">
-        <h2 className="mb-4 text-xl font-semibold">Data</h2>
+        <h2 className="mb-4 text-xl font-semibold">Data Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="border border-neutral-200 dark:border-neutral-800 rounded-lg overflow-hidden">
             <img
@@ -163,7 +192,7 @@ export default function ProjectsPage() {
 
       {/* Web3 Projects */}
       <div className="my-8">
-        <h2 className="mb-4 text-xl font-semibold">Web3</h2>
+        <h2 className="mb-4 text-xl font-semibold">Web3 Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="border border-neutral-200 dark:border-neutral-800 rounded-lg overflow-hidden">
             <img
@@ -191,7 +220,7 @@ export default function ProjectsPage() {
 
       {/* Web2 Projects */}
       <div className="my-8">
-        <h2 className="mb-4 text-xl font-semibold">Web2</h2>
+        <h2 className="mb-4 text-xl font-semibold">Web2 Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="border border-neutral-200 dark:border-neutral-800 rounded-lg overflow-hidden">
             <img

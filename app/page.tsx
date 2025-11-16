@@ -30,6 +30,24 @@ export default function Page() {
           <p>Perfect mind. Excellent Spirit.</p>
         </div>
       </div>
+
+      <div className="my-8">
+        <h2 className="mb-4 text-xl font-semibold">Featured Projects</h2>
+        <div className="space-y-4 text-sm">
+          <p>
+            <a
+              href="https://www.oyaah.cloud/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium underline"
+            >
+              Oyaah
+            </a>{" "}
+            - Automatic EDA platform that turns spreadsheets into actionable
+            insights in 30 seconds.
+          </p>
+        </div>
+      </div>
     </section>
   );
 }
