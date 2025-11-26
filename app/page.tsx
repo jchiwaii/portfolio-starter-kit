@@ -3,8 +3,8 @@ export default function Page() {
     <section>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">chiwai </h1>
       <p className="mb-4">
-        Based actuarial graduate specialized in finding solutions between data
-        and the web.
+        Fulltime founder, part-time developer, professional learner, avid
+        thinker, and pure math connoisseur.
       </p>
 
       <div className="my-8">
@@ -27,7 +27,7 @@ export default function Page() {
             and web3.
           </p>
           <p>Ardent love of African Literature.</p>
-          <p>Perfect mind. Excellent Spirit.</p>
+          <p>Perfect mind. Excellent Spirit. I love math a lot.</p>
         </div>
       </div>
 
@@ -45,6 +45,18 @@ export default function Page() {
             </a>{" "}
             - Automatic EDA platform that turns spreadsheets into actionable
             insights in 30 seconds.
+          </p>
+          <p>
+            <a
+              href="https://artifyy.online"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium underline"
+            >
+              Artify
+            </a>{" "}
+            - Digital media agency crafting creative solutions for brands and
+            businesses.
           </p>
         </div>
       </div>

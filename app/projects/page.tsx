@@ -15,6 +15,29 @@ export default function ProjectsPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="border border-neutral-200 dark:border-neutral-800 rounded-lg overflow-hidden">
             <img
+              src="/assets/artifyy.png"
+              alt="Artify digital media agency"
+              className="w-full h-48 object-contain"
+            />
+            <div className="p-4">
+              <h3 className="font-medium mb-2">Artify</h3>
+              <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-3">
+                Digital media agency crafting creative solutions for brands and
+                businesses
+              </p>
+              <a
+                href="https://artifyy.online"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm underline hover:no-underline"
+              >
+                Visit Site →
+              </a>
+            </div>
+          </div>
+
+          <div className="border border-neutral-200 dark:border-neutral-800 rounded-lg overflow-hidden">
+            <img
               src="/assets/oyaah.png"
               alt="Oyaah automatic EDA platform"
               className="w-full h-48 object-contain"
