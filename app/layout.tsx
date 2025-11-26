@@ -72,7 +72,7 @@ export default function RootLayout({
         jetbrainsMono.variable
       )}
     >
-      <body className="antialiased max-w-2xl mx-4 mt-8 lg:mx-auto min-h-screen flex flex-col font-sans selection:bg-indigo-500 selection:text-white">
+      <body className="antialiased max-w-2xl mx-4 mt-8 lg:mx-auto min-h-screen flex flex-col font-sans selection:bg-teal-500 selection:text-white">
         <Navbar />
         <main className="flex-1 min-w-0 mt-6 px-2 md:px-0 flex flex-col">
           {children}

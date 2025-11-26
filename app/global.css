@@ -7,35 +7,37 @@
 }
 
 ::selection {
-  background-color: #6366f1; /* Indigo 500 */
+  background-color: #14b8a6;
+  /* Teal 500 */
   color: #ffffff;
 }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-    width: 8px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #a1a1aa;
-    border-radius: 4px;
+  background: #a1a1aa;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #71717a;
+  background: #71717a;
 }
 
 @media (prefers-color-scheme: dark) {
-    ::-webkit-scrollbar-thumb {
-        background: #52525b;
-    }
-    ::-webkit-scrollbar-thumb:hover {
-        background: #71717a;
-    }
+  ::-webkit-scrollbar-thumb {
+    background: #52525b;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #71717a;
+  }
 }
 
 html {
@@ -43,12 +45,18 @@ html {
   font-family: var(--font-sans);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
 }
 
-code, pre {
-    font-family: var(--font-mono);
+code,
+pre {
+  font-family: var(--font-mono);
 }
 
 .prose .anchor {
@@ -73,7 +81,7 @@ code, pre {
   content: "#";
 }
 
-.prose *:hover > .anchor {
+.prose *:hover>.anchor {
   @apply visible;
 }
 
@@ -132,7 +140,7 @@ code, pre {
   @apply list-decimal pl-6 text-zinc-700 dark:text-zinc-300;
 }
 
-.prose > :first-child {
+.prose> :first-child {
   /* Override removing top margin, causing layout shift */
   margin-top: 1.25em !important;
   margin-bottom: 1.25em !important;

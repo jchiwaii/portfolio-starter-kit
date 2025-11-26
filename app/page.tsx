@@ -5,7 +5,7 @@ export default function Page() {
   return (
     <section>
       <div className="mb-16">
-        <h1 className="mb-6 text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">
+        <h1 className="mb-8 text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">
           chiwai
         </h1>
         <p className="mb-8 text-lg text-zinc-600 dark:text-zinc-400 max-w-lg leading-relaxed">
@@ -61,7 +61,7 @@ export default function Page() {
             rel="noopener noreferrer"
             className="group block p-6 bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl hover:border-zinc-300 dark:hover:border-zinc-700 transition-all hover:shadow-sm"
           >
-            <h3 className="text-lg font-bold mb-2 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">Oyaah</h3>
+            <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">Oyaah</h3>
             <p className="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed">
               Automatic EDA platform that turns spreadsheets into actionable
               insights in 30 seconds.
@@ -73,7 +73,7 @@ export default function Page() {
             rel="noopener noreferrer"
             className="group block p-6 bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl hover:border-zinc-300 dark:hover:border-zinc-700 transition-all hover:shadow-sm"
           >
-            <h3 className="text-lg font-bold mb-2 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">Artify</h3>
+            <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">Artify</h3>
             <p className="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed">
               Digital media agency crafting creative solutions for brands and
               businesses.
