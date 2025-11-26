@@ -14,10 +14,10 @@ export default function Page() {
         </p>
         <div className="flex items-center gap-4">
           <Link
-            href="/portfolio"
+            href="/projects"
             className="inline-flex items-center gap-2 px-4 py-2 bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 rounded-lg font-medium hover:opacity-90 transition-opacity"
           >
-            View Portfolio <ArrowRight size={16} />
+            View Projects <ArrowRight size={16} />
           </Link>
           <Link
             href="/contact"
