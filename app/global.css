@@ -1,41 +1,58 @@
 @import "tailwindcss";
 
-::selection {
-  background-color: #47a3f3;
-  color: #fefefe;
+:root {
+  --font-sans: var(--font-dm-sans);
+  --font-heading: var(--font-space-grotesk);
+  --font-mono: var(--font-jetbrains-mono);
 }
 
-:root {
-  --sh-class: #2d5e9d;
-  --sh-identifier: #354150;
-  --sh-sign: #8996a3;
-  --sh-string: #007f7a;
-  --sh-keyword: #e02518;
-  --sh-comment: #a19595;
-  --sh-jsxliterals: #6266d1;
-  --sh-property: #e25a1c;
-  --sh-entity: #e25a1c;
+::selection {
+  background-color: #6366f1; /* Indigo 500 */
+  color: #ffffff;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a1a1aa;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #71717a;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --sh-class: #4c97f8;
-    --sh-identifier: white;
-    --sh-keyword: #f47067;
-    --sh-string: #0fa295;
-  }
-  html {
-    color-scheme: dark;
-  }
+    ::-webkit-scrollbar-thumb {
+        background: #52525b;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #71717a;
+    }
 }
 
 html {
   min-width: 360px;
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+code, pre {
+    font-family: var(--font-mono);
 }
 
 .prose .anchor {
   @apply absolute invisible no-underline;
-
   margin-left: -1em;
   padding-right: 0.5em;
   width: 80%;
@@ -61,15 +78,15 @@ html {
 }
 
 .prose pre {
-  @apply bg-neutral-50 dark:bg-neutral-900 rounded-lg overflow-x-auto border border-neutral-200 dark:border-neutral-900 py-2 px-3 text-sm;
+  @apply bg-zinc-100 dark:bg-zinc-900 rounded-lg overflow-x-auto border border-zinc-200 dark:border-zinc-800 py-2 px-3 text-sm;
 }
 
 .prose code {
-  @apply px-1 py-0.5 rounded-lg;
+  @apply px-1 py-0.5 rounded-lg bg-zinc-100 dark:bg-zinc-800;
 }
 
 .prose pre code {
-  @apply p-0;
+  @apply p-0 bg-transparent dark:bg-transparent;
   border: initial;
   line-height: 1.5;
 }
@@ -80,54 +97,45 @@ html {
 
 .prose img {
   /* Don't apply styles to next/image */
-  @apply m-0;
+  @apply m-0 rounded-lg border border-zinc-200 dark:border-zinc-800;
 }
 
 .prose p {
-  @apply my-4 text-neutral-800 dark:text-neutral-200;
+  @apply my-4 text-zinc-700 dark:text-zinc-300 leading-relaxed;
 }
 
 .prose h1 {
-  @apply text-4xl font-medium tracking-tight mt-6 mb-2;
+  @apply text-4xl font-bold tracking-tight mt-6 mb-2 text-zinc-900 dark:text-zinc-100;
 }
 
 .prose h2 {
-  @apply text-xl font-medium tracking-tight mt-6 mb-2;
+  @apply text-2xl font-semibold tracking-tight mt-6 mb-2 text-zinc-900 dark:text-zinc-100;
 }
 
 .prose h3 {
-  @apply text-xl font-medium tracking-tight mt-6 mb-2;
+  @apply text-xl font-semibold tracking-tight mt-6 mb-2 text-zinc-900 dark:text-zinc-100;
 }
 
 .prose h4 {
-  @apply text-lg font-medium tracking-tight mt-6 mb-2;
+  @apply text-lg font-semibold tracking-tight mt-6 mb-2 text-zinc-900 dark:text-zinc-100;
 }
 
 .prose strong {
-  @apply font-medium;
+  @apply font-semibold text-zinc-900 dark:text-zinc-100;
 }
 
 .prose ul {
-  @apply list-disc pl-6;
+  @apply list-disc pl-6 text-zinc-700 dark:text-zinc-300;
 }
 
 .prose ol {
-  @apply list-decimal pl-6;
+  @apply list-decimal pl-6 text-zinc-700 dark:text-zinc-300;
 }
 
 .prose > :first-child {
   /* Override removing top margin, causing layout shift */
   margin-top: 1.25em !important;
   margin-bottom: 1.25em !important;
-}
-
-pre::-webkit-scrollbar {
-  display: none;
-}
-
-pre {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
 }
 
 /* Remove Safari input shadow on mobile */

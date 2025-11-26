@@ -23,7 +23,8 @@ export default function ProjectsPage() {
               <h3 className="font-medium mb-2">Artify</h3>
               <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-3">
                 Digital media agency crafting creative solutions for brands and
-                businesses
+                businesses with a focus on content creation, social media
+                marketing, and brand identity.
               </p>
               <a
                 href="https://artifyy.online"
@@ -54,7 +55,7 @@ export default function ProjectsPage() {
                 rel="noopener noreferrer"
                 className="text-sm underline hover:no-underline"
               >
-                Live Demo →
+                Visit Site →
               </a>
             </div>
           </div>
