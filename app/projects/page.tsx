@@ -1,7 +1,9 @@
 export default function ProjectsPage() {
   return (
     <section>
-      <h1 className="mb-8 text-4xl font-bold tracking-tight md:text-5xl">Projects</h1>
+      <h1 className="mb-8 text-4xl font-bold tracking-tight md:text-5xl">
+        Projects
+      </h1>
 
       {/* Ongoing Projects */}
       <div className="my-16">
@@ -22,7 +24,9 @@ export default function ProjectsPage() {
               />
             </div>
             <div className="p-6">
-              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">Artify</h3>
+              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+                Artify
+              </h3>
               <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
                 Digital media agency crafting creative solutions for brands and
                 businesses with a focus on content creation, social media
@@ -48,7 +52,9 @@ export default function ProjectsPage() {
               />
             </div>
             <div className="p-6">
-              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">Oyaah</h3>
+              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+                Oyaah
+              </h3>
               <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
                 Automatic EDA platform that turns spreadsheets into insights in
                 30 seconds. Upload CSV or Excel files and get instant analysis
@@ -73,7 +79,9 @@ export default function ProjectsPage() {
               />
             </div>
             <div className="p-6">
-              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">SQLAce</h3>
+              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+                SQLAce
+              </h3>
               <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
                 A platform for mastering SQL for beginners, and also help with
                 interview questions. Still in the kitchen
@@ -98,7 +106,9 @@ export default function ProjectsPage() {
               />
             </div>
             <div className="p-6">
-              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">Linspo UI</h3>
+              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+                Linspo UI
+              </h3>
               <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
                 An open source component library for data scientists, analysts,
                 and visualization specialists
@@ -128,7 +138,9 @@ export default function ProjectsPage() {
 
       {/* Data Projects */}
       <div className="my-16">
-        <h2 className="mb-8 text-2xl font-bold tracking-tight">Data Projects</h2>
+        <h2 className="mb-8 text-2xl font-bold tracking-tight">
+          Data Projects
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="group border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden bg-zinc-50 dark:bg-zinc-900 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all hover:shadow-sm">
             <div className="aspect-video w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800 relative">
@@ -139,7 +151,9 @@ export default function ProjectsPage() {
               />
             </div>
             <div className="p-6">
-              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">Time Series Library</h3>
+              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+                Time Series Library
+              </h3>
               <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
                 Building a time series library with rust for timeseries
                 things/models like ARIMA, regression, all that. Code in
@@ -165,7 +179,9 @@ export default function ProjectsPage() {
               />
             </div>
             <div className="p-6">
-              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">ARIMA Weather Forecast</h3>
+              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+                ARIMA Weather Forecast
+              </h3>
               <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
                 Time series forecasting of Nairobi's temperature using ARIMA
                 model, predicting weather patterns for the next 10 days.
@@ -200,7 +216,9 @@ export default function ProjectsPage() {
               />
             </div>
             <div className="p-6">
-              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">KCSE Analysis 2024</h3>
+              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+                KCSE Analysis 2024
+              </h3>
               <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
                 Interactive dashboard analyzing KCSE 2024 results in Kenya,
                 built with Python, deployed on Streamlit.
@@ -230,7 +248,9 @@ export default function ProjectsPage() {
 
       {/* Web3 Projects */}
       <div className="my-16">
-        <h2 className="mb-8 text-2xl font-bold tracking-tight">Web3 Projects</h2>
+        <h2 className="mb-8 text-2xl font-bold tracking-tight">
+          Web3 Projects
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="group border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden bg-zinc-50 dark:bg-zinc-900 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all hover:shadow-sm">
             <div className="aspect-video w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800 relative">
@@ -241,7 +261,9 @@ export default function ProjectsPage() {
               />
             </div>
             <div className="p-6">
-              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">CREPE (BNB Meme Coin)</h3>
+              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+                CREPE (BNB Meme Coin)
+              </h3>
               <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
                 CREPE Coin - BNB Chain meme coin website. The next SHIB?
               </p>
@@ -260,8 +282,47 @@ export default function ProjectsPage() {
 
       {/* Web2 Projects */}
       <div className="my-16">
-        <h2 className="mb-8 text-2xl font-bold tracking-tight">Web2 Projects</h2>
+        <h2 className="mb-8 text-2xl font-bold tracking-tight">
+          Web2 Projects
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="group border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden bg-zinc-50 dark:bg-zinc-900 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all hover:shadow-sm">
+            <div className="aspect-video w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800 relative">
+              <img
+                src="/assets/sada.png"
+                alt="Beatrice Sada portfolio"
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+            <div className="p-6">
+              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+                Beatrice Sada Portfolio
+              </h3>
+              <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
+                Personal portfolio for Beatrice Sada built with Next.js and
+                Tailwind, showcasing engineering experience and projects.
+              </p>
+              <div className="flex gap-4">
+                <a
+                  href="https://beatrice-sada.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
+                >
+                  Live Demo →
+                </a>
+                <a
+                  href="https://github.com/jchiwaii/sada-porfolio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
+                >
+                  Source Code →
+                </a>
+              </div>
+            </div>
+          </div>
+
           <div className="group border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden bg-zinc-50 dark:bg-zinc-900 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all hover:shadow-sm">
             <div className="aspect-video w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800 relative">
               <img
@@ -271,7 +332,9 @@ export default function ProjectsPage() {
               />
             </div>
             <div className="p-6">
-              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">Bloodline</h3>
+              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+                Bloodline
+              </h3>
               <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
                 Fullstack blood donation management system connecting donors
                 with recipients through an admin-approved workflow.
@@ -306,7 +369,9 @@ export default function ProjectsPage() {
               />
             </div>
             <div className="p-6">
-              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">Chatty</h3>
+              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+                Chatty
+              </h3>
               <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
                 A fullstack, realtime messaging app featuring instant messaging
                 and a modern, responsive interface for seamless chat
@@ -342,7 +407,9 @@ export default function ProjectsPage() {
               />
             </div>
             <div className="p-6">
-              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">Netflix Clone</h3>
+              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+                Netflix Clone
+              </h3>
               <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
                 A video streaming web app powered by TMDB API, featuring a
                 modern UI and responsive design.
@@ -377,7 +444,9 @@ export default function ProjectsPage() {
               />
             </div>
             <div className="p-6">
-              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">Kanga</h3>
+              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+                Kanga
+              </h3>
               <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
                 A bespoke tailoring website celebrating Swahili elegance with
                 modern design.
