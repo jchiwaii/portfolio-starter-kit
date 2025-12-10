@@ -92,7 +92,7 @@ export default function ProjectsPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
               >
-                Live Demo →
+                Visit Site →
               </a>
             </div>
           </div>
@@ -120,7 +120,7 @@ export default function ProjectsPage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
                 >
-                  Live Demo →
+                  Visit Site →
                 </a>
                 <a
                   href="https://github.com/jchiwaii/Linspo-UI"
@@ -267,7 +267,7 @@ export default function ProjectsPage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
                 >
-                  Live Demo →
+                  View Dashboard →
                 </a>
                 <a
                   href="https://github.com/jchiwaii/kcse-analysis"
@@ -310,7 +310,7 @@ export default function ProjectsPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
               >
-                Live Demo →
+                Visit Site →
               </a>
             </div>
           </div>
@@ -346,7 +346,7 @@ export default function ProjectsPage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
                 >
-                  Live Demo →
+                  Visit Site →
                 </a>
                 <a
                   href="https://github.com/jchiwaii/sada-porfolio"
@@ -383,7 +383,7 @@ export default function ProjectsPage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
                 >
-                  Live Demo →
+                  Visit Site →
                 </a>
                 <a
                   href="https://github.com/jchiwaii/blood-donations"
@@ -421,7 +421,7 @@ export default function ProjectsPage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
                 >
-                  Live Demo →
+                  Visit Site →
                 </a>
                 <a
                   href="https://github.com/jchiwaii/chatty-fullstack"
@@ -458,7 +458,7 @@ export default function ProjectsPage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
                 >
-                  Live Demo →
+                  Visit Site →
                 </a>
                 <a
                   href="https://github.com/jchiwaii/netflixCK"
@@ -495,7 +495,7 @@ export default function ProjectsPage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
                 >
-                  Live Demo →
+                  Visit Site →
                 </a>
                 <a
                   href="https://github.com/jchiwaii/kanga"
