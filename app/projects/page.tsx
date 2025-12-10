@@ -158,14 +158,24 @@ export default function ProjectsPage() {
                 Analysis of Kenyan economic situation using Central Bank of
                 Kenya data, built with Python.
               </p>
-              <a
-                href="https://cbk-data-project-production.up.railway.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-              >
-                Live Demo →
-              </a>
+              <div className="flex gap-4">
+                <a
+                  href="https://cbk-data-project-production.up.railway.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
+                >
+                  View Dashboard →
+                </a>
+                <a
+                  href="https://medium.com/@chiwai.kiriba/the-shilling-the-strain-and-the-dream-kenyas-economy-in-numbers-2dd273d03d05"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
+                >
+                  Read Report →
+                </a>
+              </div>
             </div>
           </div>
 
