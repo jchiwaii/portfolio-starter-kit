@@ -53,17 +53,7 @@ export default function Footer() {
             <p className="ml-2 h-7">medium</p>
           </a>
         </li>
-        <li>
-          <a
-            className="flex items-center transition-all hover:text-zinc-900 dark:hover:text-zinc-100"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://substack.com/@chiwaii"
-          >
-            <ArrowIcon />
-            <p className="ml-2 h-7">substack</p>
-          </a>
-        </li>
+
         <li>
           <a
             className="flex items-center transition-all hover:text-zinc-900 dark:hover:text-zinc-100"

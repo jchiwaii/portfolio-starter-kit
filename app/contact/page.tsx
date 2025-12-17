@@ -1,4 +1,4 @@
-import { ArrowUpRight, Mail, Github, Linkedin, FileText, Newspaper } from "lucide-react";
+import { ArrowUpRight, Mail, Github, Linkedin, Newspaper } from "lucide-react";
 import Link from "next/link";
 
 export const metadata = {
@@ -69,19 +69,7 @@ export default function ContactPage() {
                     <ArrowUpRight className="w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" />
                 </Link>
 
-                {/* Substack */}
-                <Link
-                    href="https://substack.com/@chiwaii"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group flex items-center justify-between p-4 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all"
-                >
-                    <div className="flex items-center gap-3">
-                        <FileText className="w-5 h-5 text-zinc-600 dark:text-zinc-400 group-hover:text-zinc-900 dark:group-hover:text-zinc-100 transition-colors" />
-                        <span className="font-medium text-zinc-900 dark:text-zinc-100">Substack</span>
-                    </div>
-                    <ArrowUpRight className="w-4 h-4 text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors" />
-                </Link>
+
             </div>
         </section>
     );

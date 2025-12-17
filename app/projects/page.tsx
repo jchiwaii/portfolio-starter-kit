@@ -133,6 +133,41 @@ export default function ProjectsPage() {
               </div>
             </div>
           </div>
+          <div className="group border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden bg-zinc-50 dark:bg-zinc-900 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all hover:shadow-sm">
+            <div className="aspect-video w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800 relative">
+              <img
+                src="/assets/content-filter.jpg"
+                alt="Safe Browse Content Filter"
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+            <div className="p-6">
+              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+                Safe Browse
+              </h3>
+              <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
+                Chrome based content filter extension that blocks for obscene language and replaces common words with patterns too.
+              </p>
+              <div className="flex gap-4">
+                <a
+                  href="https://chromewebstore.google.com/detail/safe-browse-content-filte/iipiknfekcemmookpphbkdiabdaiipje?authuser=1&hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
+                >
+                  Visit Extension →
+                </a>
+                <a
+                  href="https://github.com/jchiwaii/content-filter-extension"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
+                >
+                  Source Code →
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
