@@ -146,7 +146,8 @@ export default function ProjectsPage() {
                 Safe Browse
               </h3>
               <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
-                Chrome based content filter extension that blocks for obscene language and replaces common words with patterns too.
+                Chrome based content filter extension that blocks for obscene
+                language and replaces common words with patterns too.
               </p>
               <div className="flex gap-4">
                 <a
