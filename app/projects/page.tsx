@@ -195,7 +195,7 @@ export default function ProjectsPage() {
               </p>
               <div className="flex gap-4">
                 <a
-                  href="https://cbk-data-project-production.up.railway.app/"
+                  href="https://cbk-data-project.onrender.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
