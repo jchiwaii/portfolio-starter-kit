@@ -377,7 +377,7 @@ export default function ProjectsPage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
                 >
-                  View Dashboard →
+                  View Viz →
                 </a>
                 <a
                   href="https://github.com/jchiwaii/afcon"
