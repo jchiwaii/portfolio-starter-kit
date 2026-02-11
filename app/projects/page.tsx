@@ -183,8 +183,9 @@ export default function ProjectsPage() {
                 Concrete UI
               </h3>
               <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
-                A neo-brutalism modern component library with bold, raw aesthetics and
-                unapologetic design for building striking user interfaces.
+                A neo-brutalism modern component library with bold, raw
+                aesthetics and unapologetic design for building striking user
+                interfaces.
               </p>
               <div className="flex gap-4">
                 <a

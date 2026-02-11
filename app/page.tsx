@@ -53,7 +53,9 @@ export default function Page() {
       </div>
 
       <div className="my-16">
-        <h2 className="mb-8 text-2xl font-bold tracking-tight">Featured Projects</h2>
+        <h2 className="mb-8 text-2xl font-bold tracking-tight">
+          Featured Projects
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <a
             href="https://www.oyaah.cloud/"
@@ -61,7 +63,9 @@ export default function Page() {
             rel="noopener noreferrer"
             className="group block p-6 bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl hover:border-zinc-300 dark:hover:border-zinc-700 transition-all hover:shadow-sm"
           >
-            <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">Oyaah</h3>
+            <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+              Oyaah
+            </h3>
             <p className="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed">
               Automatic EDA platform that turns spreadsheets into actionable
               insights in 30 seconds.
@@ -73,7 +77,9 @@ export default function Page() {
             rel="noopener noreferrer"
             className="group block p-6 bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl hover:border-zinc-300 dark:hover:border-zinc-700 transition-all hover:shadow-sm"
           >
-            <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">Artify</h3>
+            <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+              Artify
+            </h3>
             <p className="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed">
               Digital media agency crafting creative solutions for brands and
               businesses.
@@ -85,7 +91,9 @@ export default function Page() {
             rel="noopener noreferrer"
             className="group block p-6 bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl hover:border-zinc-300 dark:hover:border-zinc-700 transition-all hover:shadow-sm"
           >
-            <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">Concrete UI</h3>
+            <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+              Concrete UI
+            </h3>
             <p className="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed">
               A neo-brutalism modern component library with bold, raw aesthetics
               for building striking user interfaces.
