@@ -79,6 +79,18 @@ export default function Page() {
               businesses.
             </p>
           </a>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group block p-6 bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl hover:border-zinc-300 dark:hover:border-zinc-700 transition-all hover:shadow-sm"
+          >
+            <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">Concrete UI</h3>
+            <p className="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed">
+              A neo-brutalism modern component library with bold, raw aesthetics
+              for building striking user interfaces.
+            </p>
+          </a>
         </div>
       </div>
     </section>
