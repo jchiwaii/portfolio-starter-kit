@@ -1,29 +1,11 @@
 import "./global.css";
 import type { Metadata } from "next";
-import { Space_Grotesk, DM_Sans, JetBrains_Mono } from "next/font/google";
-import { Navbar } from "./components/nav";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "./components/footer";
 import { baseUrl } from "./sitemap";
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-space-grotesk",
-  display: "swap",
-});
-
-const dmSans = DM_Sans({
-  subsets: ["latin"],
-  variable: "--font-dm-sans",
-  display: "swap",
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-jetbrains-mono",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -66,17 +48,13 @@ export default function RootLayout({
     <html
       lang="en"
       className={cx(
-        "text-zinc-900 bg-zinc-50 dark:text-zinc-100 dark:bg-zinc-950",
-        spaceGrotesk.variable,
-        dmSans.variable,
-        jetbrainsMono.variable
+        "bg-white text-zinc-900",
+        GeistSans.variable,
+        GeistMono.variable
       )}
     >
-      <body className="antialiased max-w-2xl mx-4 mt-8 lg:mx-auto min-h-screen flex flex-col font-sans selection:bg-teal-500 selection:text-white">
-        <Navbar />
-        <main className="flex-1 min-w-0 mt-6 px-2 md:px-0 flex flex-col">
-          {children}
-        </main>
+      <body className="flex min-h-screen flex-col bg-white font-sans antialiased selection:bg-zinc-900 selection:text-white">
+        <main className="flex-1">{children}</main>
         <Footer />
         <Analytics />
         <SpeedInsights />

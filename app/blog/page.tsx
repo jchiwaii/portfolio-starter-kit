@@ -5,7 +5,7 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <section>
+    <section className="mx-auto w-full max-w-[1280px] px-6 py-12 md:px-10 md:py-16">
       <h1 className="font-bold text-4xl mb-8 tracking-tight md:text-5xl">Musings</h1>
       <p className="mb-16 text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed max-w-lg">
         I write about various topics across different platforms.

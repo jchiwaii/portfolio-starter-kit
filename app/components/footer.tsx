@@ -1,74 +1,68 @@
-function ArrowIcon() {
-  return (
-    <svg
-      width="12"
-      height="12"
-      viewBox="0 0 12 12"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
+import { Github, Linkedin, Mail, Newspaper } from "lucide-react";
+
+const socialLinks = [
+  {
+    href: "https://github.com/jchiwaii",
+    label: "GitHub",
+    icon: Github,
+  },
+  {
+    href: "https://www.linkedin.com/in/john-chiwai/",
+    label: "LinkedIn",
+    icon: Linkedin,
+  },
+  {
+    href: "https://medium.com/@chiwai.kiriba",
+    label: "Medium",
+    icon: Newspaper,
+  },
+  {
+    href: "mailto:chiwai.kiriba@gmail.com",
+    label: "Email",
+    icon: Mail,
+  },
+];
 
 export default function Footer() {
   return (
-    <footer className="mb-16">
-      <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-zinc-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-zinc-400">
-        <li>
-          <a
-            className="flex items-center transition-all hover:text-zinc-900 dark:hover:text-zinc-100"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://github.com/jchiwaii"
-          >
-            <ArrowIcon />
-            <p className="ml-2 h-7">github</p>
-          </a>
-        </li>
-        <li>
-          <a
-            className="flex items-center transition-all hover:text-zinc-900 dark:hover:text-zinc-100"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://www.linkedin.com/in/john-chiwai/"
-          >
-            <ArrowIcon />
-            <p className="ml-2 h-7">linkedin</p>
-          </a>
-        </li>
+    <footer className="border-t border-zinc-200 bg-white">
+      <div className="mx-auto w-full max-w-[1280px] px-6 py-24 md:px-10">
+        <div className="max-w-5xl">
+          <div className="mb-5 flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-zinc-500">
+            <span className="h-2 w-2 rounded-full bg-zinc-700" />
+            <span>Let&apos;s Work Together</span>
+          </div>
+          <h2 className="text-4xl font-bold leading-[1.08] tracking-tight text-zinc-900 md:text-6xl">
+            Want to collaborate with me? Take your coffee and let&apos;s talk.
+          </h2>
+          <p className="mt-8 text-sm text-zinc-600">
+            1901 Ponorogo - Trenggalek, Bancangan, Sambit
+          </p>
+        </div>
 
-        <li>
-          <a
-            className="flex items-center transition-all hover:text-zinc-900 dark:hover:text-zinc-100"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://medium.com/@chiwai.kiriba"
-          >
-            <ArrowIcon />
-            <p className="ml-2 h-7">medium</p>
-          </a>
-        </li>
-
-        <li>
-          <a
-            className="flex items-center transition-all hover:text-zinc-900 dark:hover:text-zinc-100"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="mailto:chiwai.kiriba@gmail.com"
-          >
-            <ArrowIcon />
-            <p className="ml-2 h-7">email</p>
-          </a>
-        </li>
-      </ul>
-      <p className="mt-8 text-zinc-600 dark:text-zinc-400">
-        © {new Date().getFullYear()} - onlybelieve
-      </p>
+        <div className="mt-16 flex flex-col gap-6 border-t border-zinc-200 pt-8 md:flex-row md:items-center md:justify-between">
+          <p className="text-sm text-zinc-500">
+            Copyright © {new Date().getFullYear()} John Chiwai.
+          </p>
+          <div className="flex items-center gap-4">
+            {socialLinks.map((item) => {
+              const Icon = item.icon;
+              return (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="grid h-12 w-12 place-items-center rounded-full border border-zinc-300 bg-zinc-50 text-zinc-700 transition-all hover:border-zinc-900 hover:bg-zinc-900 hover:text-white"
+                  aria-label={item.label}
+                >
+                  <Icon size={18} />
+                </a>
+              );
+            })}
+          </div>
+        </div>
+      </div>
     </footer>
   );
 }

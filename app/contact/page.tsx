@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function ContactPage() {
     return (
-        <section>
+        <section className="mx-auto w-full max-w-[1280px] px-6 py-12 md:px-10 md:py-16">
             <h1 className="font-bold text-2xl mb-8 tracking-tighter">Contact Me</h1>
             <p className="mb-8 text-zinc-600 dark:text-zinc-400">
                 My digital footprint.

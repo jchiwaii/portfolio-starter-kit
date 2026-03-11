@@ -74,7 +74,7 @@ export default async function Blog({
   }
 
   return (
-    <section>
+    <section className="mx-auto w-full max-w-[900px] px-6 py-12 md:py-16">
       <script
         type="application/ld+json"
         suppressHydrationWarning
