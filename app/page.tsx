@@ -1,4 +1,4 @@
-import { ArrowRight, ArrowUpRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 const heroNavLinks = [
@@ -129,14 +129,28 @@ const projectRows = [
   },
 ];
 
+const homeProjectGroups = [
+  {
+    title: "Interesting Things I Am Building",
+    items: projectRows.filter(
+      (project) => project.section === "Ongoing" || project.section === "Web3"
+    ),
+  },
+  {
+    title: "Data Projects",
+    items: projectRows.filter((project) => project.section === "Data"),
+  },
+  {
+    title: "Web2 Projects",
+    items: projectRows.filter((project) => project.section === "Web2"),
+  },
+];
+
 export default function Page() {
   const year = new Date().getFullYear();
 
   return (
-    <section
-      id="home"
-      className="bg-white text-zinc-900"
-    >
+    <section id="home" className="bg-white text-zinc-900">
       <div className="mx-auto w-full max-w-[1440px] px-6 md:px-10">
         <div className="border-b border-zinc-200 md:relative md:h-[679px]">
           <div className="grid items-center gap-6 pt-4 md:absolute md:left-0 md:right-0 md:top-4 md:grid-cols-[1fr_191px_1fr] md:gap-[33px] md:pt-0">
@@ -152,7 +166,7 @@ export default function Page() {
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-black/25 via-transparent to-white/10 mix-blend-multiply" />
             </div>
             <h1 className="justify-self-start text-[clamp(4rem,11vw,9.5rem)] font-semibold leading-[0.9] tracking-tight text-zinc-900 md:justify-self-end">
-              JOHN
+              CHIWAI
             </h1>
           </div>
 
@@ -211,57 +225,52 @@ export default function Page() {
         </div>
       </div>
 
-      <div id="about" className="bg-zinc-50">
-        <div className="mx-auto w-full max-w-[1280px] px-6 py-20 md:px-10 md:py-28">
-          <div className="grid gap-8 border-t border-zinc-200 pt-14 md:grid-cols-[1fr_auto] md:items-start">
-            <h2 className="max-w-4xl text-[clamp(2.2rem,7vw,5.6rem)] font-semibold leading-[1.05] tracking-tight text-zinc-900">
-              We Make Things Happen
-            </h2>
-            <p className="text-2xl font-semibold text-zinc-900 md:text-3xl">
-              ©{year}
-            </p>
-          </div>
+      <div id="about" className="bg-[#fafafa] font-mono text-[#23262f]">
+        <div className="mx-auto w-full max-w-[1440px] px-6 py-16 md:h-[1572px] md:px-[150px] md:py-[120px]">
+          <div className="mx-auto flex h-full w-full max-w-[1130px] flex-col gap-10 md:gap-[110px]">
+            <div className="h-[2px] w-full max-w-[1120px] bg-[#e6e8ec]" />
 
-          <div className="mt-16 grid gap-10 md:grid-cols-[240px_1fr] md:gap-24">
-            <div className="relative aspect-[3/4] overflow-hidden rounded-xl border border-zinc-200 bg-zinc-200">
-              <img
-                src="/assets/sada.png"
-                alt="Profile work sample"
-                className="h-full w-full object-cover"
-              />
-            </div>
-
-            <div className="space-y-10">
-              <div className="space-y-4">
-                <p className="text-4xl font-semibold tracking-tight text-zinc-900 md:text-6xl">
-                  01
-                </p>
-                <p className="max-w-3xl text-xl leading-relaxed text-zinc-600 md:text-3xl">
-                  Nothing is too hard to crack. I&apos;m driven by chronic
-                  curiosity and a passion for telling stories through code,
-                  pictures and data.
+            <div className="flex flex-1 flex-col gap-12 md:gap-[82px]">
+              <div className="flex flex-col gap-5 md:w-[1130px] md:flex-row md:items-start md:justify-between">
+                <h2 className="max-w-[640px] text-[44px] leading-[1.03] tracking-[-0.03em] md:text-[72px]">
+                  <span className="block text-[#23262f]">We Make Things</span>
+                  <span className="block text-[#b6b8bf]">Happen</span>
+                </h2>
+                <p className="text-[24px] leading-none text-[#272727] md:pt-1 md:text-[32px]">
+                  ©{year}
                 </p>
               </div>
 
-              <div className="overflow-hidden rounded-xl border border-zinc-200 bg-zinc-200">
-                <img
-                  src="/assets/linspo.png"
-                  alt="Featured project snapshot"
-                  className="h-[280px] w-full object-cover md:h-[430px]"
-                />
-              </div>
+              <div className="w-full max-w-[1120px]">
+                <div className="flex flex-col gap-10 md:ml-[96px] md:h-[1010px] md:flex-row md:items-start md:gap-[128px]">
+                  <div className="order-2 md:order-1 md:pt-[381px]">
+                    <div className="h-[248px] w-full border border-white/40 bg-[#b9b9bb] shadow-[inset_0_1px_0_rgba(255,255,255,0.35)] md:w-[256px]" />
+                  </div>
 
-              <div className="max-w-3xl space-y-6 text-base leading-relaxed text-zinc-600 md:text-xl">
-                <p>
-                  Building scalable creative solutions that go beyond the hype.
-                  Sometimes I write, sometimes I code, other times I am behind a
-                  lens, and most times I enjoy my own company.
-                </p>
-                <p>
-                  Open to long-term meaningful projects across data, AI, web2,
-                  and web3. Ardent love of African literature. Perfect mind.
-                  Excellent spirit. I love math a lot.
-                </p>
+                  <div className="order-1 flex flex-col gap-10 md:order-2 md:h-[1010px] md:w-[640px] md:gap-[80px]">
+                    <div className="flex flex-col gap-6 md:w-[643px] md:gap-8">
+                      <p className="text-[40px] leading-none text-[#23262f] md:text-[56px]">
+                        01
+                      </p>
+                      <p className="text-[16px] leading-[1.6] text-[#667085] md:text-[18px] md:leading-[1.5]">
+                        Nothing is too hard to crack. I&apos;m driven by
+                        chronic curiosity and a passion for telling stories
+                        through code, pictures and data.
+                      </p>
+                    </div>
+
+                    <div className="h-[300px] w-full border border-white/40 bg-[#b9b9bb] shadow-[inset_0_1px_0_rgba(255,255,255,0.35)] md:h-[458px] md:w-[640px]" />
+
+                    <p className="text-[14px] leading-[1.7] text-[#667085] md:w-[643px] md:text-[15px] md:leading-[1.7]">
+                      Building scalable creative solutions that go beyond the
+                      hype. Sometimes I write, sometimes I code, other times I
+                      am behind a lens, and most times I enjoy my own company.
+                      Open to long-term meaningful projects across data, AI,
+                      web2, and web3. Ardent love of African literature.
+                      Perfect mind. Excellent spirit. I love math a lot.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -270,56 +279,53 @@ export default function Page() {
 
       <div id="work" className="bg-white">
         <div className="mx-auto w-full max-w-[1280px] px-6 py-20 md:px-10 md:py-28">
-          <div className="mb-6 grid gap-4 text-xs font-semibold uppercase tracking-[0.2em] text-zinc-500 md:grid-cols-[260px_1fr]">
-            <p>Project Section</p>
-            <p>Project Name</p>
+          <div className="mb-10">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-500">
+              Projects
+            </p>
           </div>
 
           <div className="border-y border-zinc-200">
-            {projectRows.map((project) => (
-              <a
-                key={project.name}
-                href={project.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative block border-b border-zinc-200 py-6 last:border-b-0"
+            {homeProjectGroups.map((group) => (
+              <details
+                key={group.title}
+                className="group border-b border-zinc-200 last:border-b-0"
               >
-                <div className="grid gap-4 md:grid-cols-[260px_1fr] md:items-center">
-                  <p className="text-sm font-medium tracking-wide text-zinc-500">
-                    {project.section}
-                  </p>
-                  <div>
-                    <div className="flex items-center justify-between gap-4">
-                      <h3 className="text-2xl font-semibold tracking-tight text-zinc-900 transition-colors group-hover:text-zinc-500 md:text-4xl">
-                        {project.name}
-                      </h3>
-                      <ArrowUpRight
-                        className="shrink-0 text-zinc-400 transition-colors group-hover:text-zinc-900"
-                        size={24}
-                      />
-                    </div>
-                    <p className="mt-2 max-w-3xl text-sm leading-relaxed text-zinc-500 md:text-base">
-                      {project.detail}
-                    </p>
-                  </div>
-                </div>
+                <summary className="flex cursor-pointer list-none items-center justify-between py-5 text-xl font-semibold text-zinc-900 marker:content-none md:text-2xl">
+                  <span>{group.title}</span>
+                  <span className="text-sm font-mono font-medium text-zinc-500">
+                    {group.items.length}
+                  </span>
+                </summary>
 
-                <div className="pointer-events-none mt-5 overflow-hidden rounded-xl border border-zinc-200 md:hidden">
-                  <img
-                    src={project.image}
-                    alt={`${project.name} preview`}
-                    className="h-40 w-full object-cover"
-                  />
-                </div>
+                <ul className="border-t border-zinc-200 pb-3">
+                  {group.items.map((project) => (
+                    <li key={project.name} className="border-b border-zinc-200 last:border-b-0">
+                      <a
+                        href={project.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group/project relative block py-4 pr-2 transition-colors hover:bg-zinc-50 md:pr-44"
+                      >
+                        <p className="text-sm leading-relaxed text-zinc-600 md:text-base">
+                          <span className="font-semibold text-zinc-900">
+                            {project.name}
+                          </span>
+                          <span>{` — ${project.detail}`}</span>
+                        </p>
 
-                <div className="pointer-events-none absolute right-4 top-1/2 hidden h-44 w-72 -translate-y-1/2 translate-x-4 overflow-hidden rounded-xl border border-zinc-200 bg-zinc-100 opacity-0 shadow-2xl transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 md:block">
-                  <img
-                    src={project.image}
-                    alt={`${project.name} preview`}
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-              </a>
+                        <div className="pointer-events-none absolute right-4 top-1/2 hidden h-20 w-32 -translate-y-1/2 translate-x-2 overflow-hidden rounded-md border border-zinc-200 bg-zinc-100 opacity-0 shadow-lg transition-all duration-200 group-hover/project:translate-x-0 group-hover/project:opacity-100 md:block">
+                          <img
+                            src={project.image}
+                            alt={`${project.name} preview`}
+                            className="h-full w-full object-cover"
+                          />
+                        </div>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </details>
             ))}
           </div>
 
