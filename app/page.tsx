@@ -3,9 +3,9 @@ import Link from "next/link";
 import { ThemeToggle } from "./components/theme-toggle";
 
 const heroNavLinks = [
-  { name: "Home", href: "/#home" },
-  { name: "About", href: "/#about" },
-  { name: "Projects", href: "/projects" },
+  { name: "Home", href: "#home", hash: true },
+  { name: "About", href: "#about", hash: true },
+  { name: "Projects", href: "/projects", hash: false },
 ];
 
 const projectRows = [
@@ -172,7 +172,7 @@ export default function Page() {
           </div>
 
           <div className="mt-7 grid gap-4 py-3 text-lg leading-none text-zinc-700 dark:text-zinc-300 md:absolute md:left-0 md:right-0 md:top-[208px] md:mt-0 md:grid-cols-[1fr_auto_1fr] md:items-center md:py-0">
-            <div className="font-mono font-medium">
+            <div className="font-mono">
               <ThemeToggle />
             </div>
 
@@ -186,16 +186,21 @@ export default function Page() {
             <nav className="flex items-center gap-3 font-mono md:justify-end">
               {heroNavLinks.map((item, index) => (
                 <div key={item.name} className="flex items-center gap-3">
-                  <Link
-                    href={item.href}
-                    className={
-                      index === 0
-                        ? "font-mono font-semibold text-zinc-900 dark:text-zinc-100"
-                        : "font-mono text-zinc-500 transition-colors hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
-                    }
-                  >
-                    {item.name}
-                  </Link>
+                  {item.hash ? (
+                    <a
+                      href={item.href}
+                      className="font-mono text-zinc-500 transition-colors hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+                    >
+                      {item.name}
+                    </a>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      className="font-mono text-zinc-500 transition-colors hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+                    >
+                      {item.name}
+                    </Link>
+                  )}
                   {index < heroNavLinks.length - 1 ? (
                     <span className="text-zinc-400 dark:text-zinc-600">|</span>
                   ) : null}
@@ -233,8 +238,7 @@ export default function Page() {
             <div className="flex flex-1 flex-col gap-12 md:gap-[82px]">
               <div className="flex flex-col gap-5 md:w-[1130px] md:flex-row md:items-start md:justify-between">
                 <h2 className="max-w-[640px] text-[44px] leading-[1.03] tracking-[-0.03em] md:text-[72px]">
-                  <span className="block text-[#23262f] dark:text-zinc-100">We Make Things</span>
-                  <span className="block text-[#b6b8bf] dark:text-zinc-600">Happen</span>
+                  <span className="block text-[#23262f] dark:text-zinc-100">Minimalist in Chief</span>
                 </h2>
                 <p className="text-[24px] leading-none text-[#272727] dark:text-zinc-300 md:pt-1 md:text-[32px]">
                   ©{year}
