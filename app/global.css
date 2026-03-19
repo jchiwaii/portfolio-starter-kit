@@ -1,6 +1,8 @@
 /* stylelint-disable */
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --font-sans: var(--font-geist-sans);
   --font-heading: var(--font-geist-sans);
@@ -31,14 +33,12 @@
   background: #71717a;
 }
 
-@media (prefers-color-scheme: dark) {
-  ::-webkit-scrollbar-thumb {
-    background: #52525b;
-  }
+.dark ::-webkit-scrollbar-thumb {
+  background: #52525b;
+}
 
-  ::-webkit-scrollbar-thumb:hover {
-    background: #71717a;
-  }
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #71717a;
 }
 
 html {

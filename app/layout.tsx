@@ -47,13 +47,17 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cx(
-        "bg-white text-zinc-900",
-        GeistSans.variable,
-        GeistMono.variable
-      )}
+      suppressHydrationWarning
+      className={cx(GeistSans.variable, GeistMono.variable)}
     >
-      <body className="flex min-h-screen flex-col bg-white font-sans antialiased selection:bg-zinc-900 selection:text-white">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var s=localStorage.getItem('theme');var d=document.documentElement;if(s==='dark'||(!s&&window.matchMedia('(prefers-color-scheme:dark)').matches)){d.classList.add('dark')}else{d.classList.remove('dark')}}catch(e){}})()`,
+          }}
+        />
+      </head>
+      <body className="flex min-h-screen flex-col bg-white font-sans antialiased dark:bg-zinc-950 dark:text-zinc-100">
         <main className="flex-1">{children}</main>
         <Footer />
         <Analytics />
