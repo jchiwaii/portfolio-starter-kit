@@ -237,7 +237,7 @@ export default function Page() {
 
             <div className="flex flex-1 flex-col gap-12 md:gap-[82px]">
               <div className="flex flex-col gap-5 md:w-[1130px] md:flex-row md:items-start md:justify-between">
-                <h2 className="max-w-[640px] text-[44px] leading-[1.03] tracking-[-0.03em] md:text-[72px]">
+                <h2 className="max-w-[640px] text-[34px] leading-[1.03] tracking-[-0.03em] md:text-[56px]">
                   <span className="block text-[#23262f] dark:text-zinc-100">Minimalist in Chief</span>
                 </h2>
                 <p className="text-[24px] leading-none text-[#272727] dark:text-zinc-300 md:pt-1 md:text-[32px]">
@@ -246,32 +246,28 @@ export default function Page() {
               </div>
 
               <div className="w-full max-w-[1120px]">
-                <div className="flex flex-col gap-10 md:ml-[96px] md:h-[1010px] md:flex-row md:items-start md:gap-[128px]">
-                  <div className="order-2 md:order-1 md:pt-[381px]">
-                    <div className="h-[248px] w-full border border-white/40 bg-[#b9b9bb] shadow-[inset_0_1px_0_rgba(255,255,255,0.35)] dark:border-zinc-800 dark:bg-zinc-900 md:w-[256px]" />
-                  </div>
-
-                  <div className="order-1 flex flex-col gap-10 md:order-2 md:h-[1010px] md:w-[640px] md:gap-[80px]">
-                    <div className="flex flex-col gap-6 md:w-[643px] md:gap-8">
-                      <p className="text-[40px] leading-none text-[#23262f] dark:text-zinc-100 md:text-[56px]">
-                        01
-                      </p>
-                      <p className="text-[16px] leading-[1.6] text-[#667085] dark:text-zinc-400 md:text-[18px] md:leading-[1.5]">
-                        Nothing is too hard to crack. I&apos;m driven by
-                        chronic curiosity and a passion for telling stories
-                        through code, pictures and data.
-                      </p>
-                    </div>
-
-                    <div className="h-[300px] w-full border border-white/40 bg-[#b9b9bb] shadow-[inset_0_1px_0_rgba(255,255,255,0.35)] dark:border-zinc-800 dark:bg-zinc-900 md:h-[458px] md:w-[640px]" />
-
-                    <p className="text-[14px] leading-[1.7] text-[#667085] dark:text-zinc-400 md:w-[643px] md:text-[15px] md:leading-[1.7]">
+                <div className="md:ml-[96px] md:max-w-[643px]">
+                  <div className="flex flex-col gap-6 md:gap-8">
+                    <p className="text-[34px] leading-none text-[#23262f] dark:text-zinc-100 md:text-[44px]">
+                      01
+                    </p>
+                    <p className="text-[16px] leading-[1.6] text-[#667085] dark:text-zinc-400 md:text-[18px] md:leading-[1.5]">
+                      Nothing is too hard to crack. I&apos;m driven by chronic
+                      curiosity and a passion for telling stories through code,
+                      pictures and data.
+                    </p>
+                    <p className="text-[16px] leading-[1.6] text-[#667085] dark:text-zinc-400 md:text-[18px] md:leading-[1.5]">
                       Building scalable creative solutions that go beyond the
                       hype. Sometimes I write, sometimes I code, other times I
                       am behind a lens, and most times I enjoy my own company.
                       Open to long-term meaningful projects across data, AI,
                       web2, and web3. Ardent love of African literature.
                       Perfect mind. Excellent spirit. I love math a lot.
+                    </p>
+                    <p className="text-[16px] leading-[1.6] text-[#667085] dark:text-zinc-400 md:text-[18px] md:leading-[1.5]">
+                      Chief vibe coder with powerful benchmarks agains the best
+                      of AI models. I write, sometimes. What else? I am here to
+                      take AI&apos;s job.
                     </p>
                   </div>
                 </div>
