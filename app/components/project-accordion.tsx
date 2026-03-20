@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 type Project = {
   name: string;
@@ -56,10 +57,12 @@ export function ProjectAccordion({ groups }: { groups: Group[] }) {
                   </p>
 
                   <div className="pointer-events-none absolute right-4 top-1/2 hidden h-20 w-32 -translate-y-1/2 translate-x-2 overflow-hidden rounded-md border border-zinc-200 bg-zinc-100 opacity-0 shadow-lg transition-all duration-200 group-hover/project:translate-x-0 group-hover/project:opacity-100 dark:border-zinc-700 dark:bg-zinc-800 md:block">
-                    <img
+                    <Image
                       src={project.image}
                       alt={`${project.name} preview`}
-                      className="h-full w-full object-cover"
+                      fill
+                      className="object-cover"
+                      sizes="128px"
                     />
                   </div>
                 </a>

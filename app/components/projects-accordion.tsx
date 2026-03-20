@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 type ProjectLink = { label: string; href: string };
 
@@ -53,10 +54,12 @@ export function ProjectsAccordion({ sections }: { sections: Section[] }) {
                 className="group/card flex flex-col overflow-hidden rounded-lg border border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900"
               >
                 <div className="relative h-28 w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800">
-                  <img
+                  <Image
                     src={project.image}
                     alt={project.name}
-                    className="h-full w-full object-cover transition-transform duration-300 group-hover/card:scale-105"
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover/card:scale-105"
+                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
                   />
                 </div>
                 <div className="flex flex-1 flex-col gap-2 p-3">
