@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { ThemeToggle } from "./components/theme-toggle";
+import { ProjectAccordion } from "./components/project-accordion";
 
 const heroNavLinks = [
   { name: "Home", href: "#home", hash: true },
@@ -231,11 +232,11 @@ export default function Page() {
       </div>
 
       <div id="about" className="bg-white font-mono text-[#23262f] dark:bg-zinc-950 dark:text-zinc-100">
-        <div className="mx-auto w-full max-w-[1440px] px-6 py-16 md:h-[1572px] md:px-[150px] md:py-[120px]">
-          <div className="mx-auto flex h-full w-full max-w-[1130px] flex-col gap-10 md:gap-[110px]">
+        <div className="mx-auto w-full max-w-[1440px] px-6 py-16 md:px-[150px] md:pb-[56px] md:pt-[96px]">
+          <div className="mx-auto flex w-full max-w-[1130px] flex-col gap-10 md:gap-[84px]">
             <div className="h-[2px] w-full max-w-[1120px] bg-[#e6e8ec] dark:bg-zinc-800" />
 
-            <div className="flex flex-1 flex-col gap-12 md:gap-[82px]">
+            <div className="flex flex-col gap-12 md:gap-[64px]">
               <div className="flex flex-col gap-5 md:w-[1130px] md:flex-row md:items-start md:justify-between">
                 <h2 className="max-w-[640px] text-[34px] leading-[1.03] tracking-[-0.03em] md:text-[56px]">
                   <span className="block text-[#23262f] dark:text-zinc-100">Minimalist in Chief</span>
@@ -277,71 +278,34 @@ export default function Page() {
         </div>
       </div>
 
-      <div id="work" className="bg-white dark:bg-zinc-950">
-        <div className="mx-auto w-full max-w-[1280px] px-6 py-20 md:px-10 md:py-28">
-          <div className="mb-10">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-500 dark:text-zinc-400">
-              Projects
-            </p>
-          </div>
+      <div id="work" className="bg-white font-mono dark:bg-zinc-950">
+        <div className="mx-auto w-full max-w-[1440px] px-6 pb-20 pt-6 md:px-[150px] md:pb-28 md:pt-8">
+          <div className="mx-auto flex w-full max-w-[1130px] flex-col">
+            <div className="mb-10 md:ml-[96px] md:max-w-[643px]">
+              <p className="text-[34px] leading-none text-[#23262f] dark:text-zinc-100 md:text-[44px]">
+                02
+              </p>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-500 dark:text-zinc-400">
+                Projects
+              </p>
+            </div>
 
-          <div className="border-y border-zinc-200 dark:border-zinc-800">
-            {homeProjectGroups.map((group) => (
-              <details
-                key={group.title}
-                className="group border-b border-zinc-200 last:border-b-0 dark:border-zinc-800"
+            <ProjectAccordion groups={homeProjectGroups} />
+
+            <div className="mt-12 flex flex-wrap items-center gap-4 md:ml-[96px]">
+              <Link
+                href="/projects"
+                className="inline-flex items-center gap-2 rounded-full border border-zinc-900 px-5 py-2 text-sm font-medium text-zinc-900 transition-colors hover:bg-zinc-900 hover:text-white dark:border-zinc-100 dark:text-zinc-100 dark:hover:bg-zinc-100 dark:hover:text-zinc-900"
               >
-                <summary className="flex cursor-pointer list-none items-center justify-between py-5 text-xl font-semibold text-zinc-900 marker:content-none dark:text-zinc-100 md:text-2xl">
-                  <span>{group.title}</span>
-                  <span className="font-mono text-sm font-medium text-zinc-500 dark:text-zinc-400">
-                    {group.items.length}
-                  </span>
-                </summary>
-
-                <ul className="border-t border-zinc-200 pb-3 dark:border-zinc-800">
-                  {group.items.map((project) => (
-                    <li key={project.name} className="border-b border-zinc-200 last:border-b-0 dark:border-zinc-800">
-                      <a
-                        href={project.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group/project relative block py-4 pr-2 transition-colors hover:bg-zinc-50 dark:hover:bg-zinc-900/50 md:pr-44"
-                      >
-                        <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400 md:text-base">
-                          <span className="font-semibold text-zinc-900 dark:text-zinc-100">
-                            {project.name}
-                          </span>
-                          <span>{` — ${project.detail}`}</span>
-                        </p>
-
-                        <div className="pointer-events-none absolute right-4 top-1/2 hidden h-20 w-32 -translate-y-1/2 translate-x-2 overflow-hidden rounded-md border border-zinc-200 bg-zinc-100 opacity-0 shadow-lg transition-all duration-200 group-hover/project:translate-x-0 group-hover/project:opacity-100 dark:border-zinc-700 dark:bg-zinc-800 md:block">
-                          <img
-                            src={project.image}
-                            alt={`${project.name} preview`}
-                            className="h-full w-full object-cover"
-                          />
-                        </div>
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </details>
-            ))}
-          </div>
-
-          <div className="mt-12 flex flex-wrap items-center gap-4">
-            <Link
-              href="/projects"
-              className="inline-flex items-center gap-2 rounded-full border border-zinc-900 px-5 py-2 text-sm font-medium text-zinc-900 transition-colors hover:bg-zinc-900 hover:text-white dark:border-zinc-100 dark:text-zinc-100 dark:hover:bg-zinc-100 dark:hover:text-zinc-900"
-            >
-              Explore all projects <ArrowRight size={16} />
-            </Link>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 rounded-full border border-zinc-300 px-5 py-2 text-sm font-medium text-zinc-600 transition-colors hover:border-zinc-900 hover:text-zinc-900 dark:border-zinc-700 dark:text-zinc-400 dark:hover:border-zinc-100 dark:hover:text-zinc-100"
-            >
-              Let&apos;s collaborate
-            </Link>
+                Explore all projects <ArrowRight size={16} />
+              </Link>
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 rounded-full border border-zinc-300 px-5 py-2 text-sm font-medium text-zinc-600 transition-colors hover:border-zinc-900 hover:text-zinc-900 dark:border-zinc-700 dark:text-zinc-400 dark:hover:border-zinc-100 dark:hover:text-zinc-100"
+              >
+                Let&apos;s collaborate
+              </Link>
+            </div>
           </div>
         </div>
       </div>
