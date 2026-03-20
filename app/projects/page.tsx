@@ -178,7 +178,7 @@ export default function ProjectsPage() {
   const year = new Date().getFullYear();
 
   return (
-    <section className="bg-white font-mono text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
+    <section className="bg-white font-mono text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 pt-16">
       <div className="mx-auto w-full max-w-[1440px] px-6 py-16 md:px-[150px] md:pb-[56px] md:pt-[96px]">
         <div className="mx-auto flex w-full max-w-[1130px] flex-col gap-10 md:gap-[84px]">
 
