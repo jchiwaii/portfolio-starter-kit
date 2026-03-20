@@ -1,661 +1,202 @@
+import { ProjectsAccordion } from "../components/projects-accordion";
+
+const sections = [
+  {
+    num: "01",
+    title: "Interesting Things I Am Building",
+    items: [
+      {
+        name: "Artify",
+        image: "/assets/artifyy.png",
+        description: "Digital media agency for brands and businesses.",
+        links: [{ label: "Visit", href: "https://artifyy.online" }],
+      },
+      {
+        name: "Oyaah",
+        image: "/assets/oyaah.png",
+        description: "Automatic EDA platform for instant spreadsheet insights.",
+        links: [{ label: "Visit", href: "https://www.oyaah.cloud/" }],
+      },
+      {
+        name: "SQLAce",
+        image: "/assets/sql-ace.png",
+        description: "SQL learning platform for beginners and interview prep.",
+        links: [{ label: "Visit", href: "https://sql-ace.netlify.app/" }],
+      },
+      {
+        name: "Linspo UI",
+        image: "/assets/linspo.png",
+        description: "Open source UI for data science and visualization teams.",
+        links: [
+          { label: "Visit", href: "https://linspo-ui.vercel.app/" },
+          { label: "Code", href: "https://github.com/jchiwaii/Linspo-UI" },
+        ],
+      },
+      {
+        name: "Safe Browse",
+        image: "/assets/content-filter.jpg",
+        description: "Chrome extension for safer browsing and language filtering.",
+        links: [
+          { label: "Extension", href: "https://chromewebstore.google.com/detail/safe-browse-content-filte/iipiknfekcemmookpphbkdiabdaiipje?authuser=1&hl=en" },
+          { label: "Code", href: "https://github.com/jchiwaii/content-filter-extension" },
+        ],
+      },
+      {
+        name: "Concrete UI",
+        image: "/assets/concrete-ui.png",
+        description: "Neo-brutalism component library with bold, raw aesthetics.",
+        links: [
+          { label: "Visit", href: "#" },
+          { label: "Code", href: "#" },
+        ],
+      },
+    ],
+  },
+  {
+    num: "02",
+    title: "Data Projects",
+    items: [
+      {
+        name: "AFCON Visualization",
+        image: "/assets/afcon.png",
+        description: "Race-bar visualization of AFCON storylines and outcomes.",
+        links: [
+          { label: "Visit", href: "https://afcon-eta.vercel.app/" },
+          { label: "Code", href: "https://github.com/jchiwaii/afcon" },
+        ],
+      },
+      {
+        name: "ARIMA Weather Forecast",
+        image: "/assets/forecast.png",
+        description: "Nairobi weather forecasting project using ARIMA.",
+        links: [
+          { label: "Report", href: "https://medium.com/@chiwai.kiriba/what-nairobis-weather-taught-me-about-time-series-forecasting-aaade4711b62" },
+          { label: "Code", href: "https://github.com/jchiwaii/ARIMA-Weather-Forecast" },
+        ],
+      },
+      {
+        name: "CBK Data Analysis",
+        image: "/assets/cbk.png",
+        description: "Kenyan macroeconomic analysis with Python and dashboards.",
+        links: [
+          { label: "Dashboard", href: "https://cbk-data-project.onrender.com/" },
+          { label: "Report", href: "https://medium.com/@chiwai.kiriba/the-shilling-the-strain-and-the-dream-kenyas-economy-in-numbers-2dd273d03d05" },
+        ],
+      },
+      {
+        name: "KCSE 2025 Analysis",
+        image: "/assets/kcse2025.png",
+        description: "Interactive KCSE results analytics with Next.js + charts.",
+        links: [
+          { label: "Dashboard", href: "https://kcse-2025.vercel.app/" },
+          { label: "Code", href: "https://github.com/jchiwaii/kcse-2025" },
+        ],
+      },
+      {
+        name: "KCSE Analysis 2024",
+        image: "/assets/kcse.png",
+        description: "Python dashboard for national KCSE 2024 result exploration.",
+        links: [
+          { label: "Dashboard", href: "https://kcse-analysis.streamlit.app/" },
+          { label: "Code", href: "https://github.com/jchiwaii/kcse-analysis" },
+        ],
+      },
+      {
+        name: "Time Series Library",
+        image: "/assets/time-series.jpeg",
+        description: "Rust library for time-series models and forecasting workflows.",
+        links: [{ label: "Code", href: "https://github.com/jchiwaii/timeseries" }],
+      },
+    ],
+  },
+  {
+    num: "03",
+    title: "Web2 Projects",
+    items: [
+      {
+        name: "Beatrice Sada Portfolio",
+        image: "/assets/sada.png",
+        description: "Personal portfolio system built with Next.js and Tailwind.",
+        links: [
+          { label: "Visit", href: "https://beatrice-sada.vercel.app/" },
+          { label: "Code", href: "https://github.com/jchiwaii/sada-porfolio" },
+        ],
+      },
+      {
+        name: "Bloodline",
+        image: "/assets/bloodline.png",
+        description: "Fullstack blood donation platform with admin workflows.",
+        links: [
+          { label: "Visit", href: "https://blood-donations-indol.vercel.app/" },
+          { label: "Code", href: "https://github.com/jchiwaii/blood-donations" },
+        ],
+      },
+      {
+        name: "Chatty",
+        image: "/assets/chatty.png",
+        description: "Realtime fullstack messaging app with modern UX.",
+        links: [
+          { label: "Visit", href: "https://chatty-fullstack.vercel.app" },
+          { label: "Code", href: "https://github.com/jchiwaii/chatty-fullstack" },
+        ],
+      },
+      {
+        name: "Kanga",
+        image: "/assets/kanga.png",
+        description: "Tailoring website blending Swahili elegance and modern UI.",
+        links: [
+          { label: "Visit", href: "https://kanga.netlify.app/" },
+          { label: "Code", href: "https://github.com/jchiwaii/kanga" },
+        ],
+      },
+      {
+        name: "Netflix Clone",
+        image: "/assets/netflix.png",
+        description: "TMDB-powered streaming interface with responsive design.",
+        links: [
+          { label: "Visit", href: "https://ck-gpt.web.app/" },
+          { label: "Code", href: "https://github.com/jchiwaii/netflixCK" },
+        ],
+      },
+    ],
+  },
+  {
+    num: "04",
+    title: "Web3",
+    items: [
+      {
+        name: "CREPE (BNB Meme Coin)",
+        image: "/assets/crepe.png",
+        description: "Brand and launch website for a BNB chain meme coin.",
+        links: [{ label: "Visit", href: "https://crepebnb.netlify.app/" }],
+      },
+    ],
+  },
+];
+
 export default function ProjectsPage() {
+  const year = new Date().getFullYear();
+
   return (
-    <section className="mx-auto w-full max-w-[1280px] px-6 py-12 md:px-10 md:py-16">
-      <h1 className="mb-8 text-4xl font-bold tracking-tight md:text-5xl">
-        Projects
-      </h1>
+    <section className="bg-white font-mono text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
+      <div className="mx-auto w-full max-w-[1440px] px-6 py-16 md:px-[150px] md:pb-[56px] md:pt-[96px]">
+        <div className="mx-auto flex w-full max-w-[1130px] flex-col gap-10 md:gap-[84px]">
 
-      {/* Ongoing Projects */}
-      <div className="my-16">
-        <h2 className="mb-8 text-2xl font-bold tracking-tight flex items-center gap-3">
-          Ongoing Projects
-          <span className="relative flex h-3 w-3">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
-          </span>
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="group border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden bg-zinc-50 dark:bg-zinc-900 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all hover:shadow-sm">
-            <div className="aspect-video w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800 relative">
-              <img
-                src="/assets/artifyy.png"
-                alt="Artify digital media agency"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
-                Artify
-              </h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
-                Digital media agency crafting creative solutions for brands and
-                businesses with a focus on content creation, social media
-                marketing, and brand identity.
-              </p>
-              <a
-                href="https://artifyy.online"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-              >
-                Visit Site →
-              </a>
-            </div>
+          <div className="h-[2px] w-full bg-zinc-200 dark:bg-zinc-800" />
+
+          <div className="flex flex-col gap-5 md:flex-row md:items-start md:justify-between">
+            <h1 className="text-[34px] leading-[1.03] tracking-[-0.03em] text-zinc-900 dark:text-zinc-100 md:text-[56px]">
+              Projects
+            </h1>
+            <p className="text-[24px] leading-none text-zinc-400 dark:text-zinc-600 md:pt-1 md:text-[32px]">
+              ©{year}
+            </p>
           </div>
 
-          <div className="group border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden bg-zinc-50 dark:bg-zinc-900 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all hover:shadow-sm">
-            <div className="aspect-video w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800 relative">
-              <img
-                src="/assets/oyaah.png"
-                alt="Oyaah automatic EDA platform"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
-                Oyaah
-              </h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
-                Automatic EDA platform that turns spreadsheets into insights in
-                30 seconds. Upload CSV or Excel files and get instant analysis
-              </p>
-              <a
-                href="https://www.oyaah.cloud/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-              >
-                Visit Site →
-              </a>
-            </div>
+          <div className="md:ml-[96px]">
+            <ProjectsAccordion sections={sections} />
           </div>
 
-          <div className="group border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden bg-zinc-50 dark:bg-zinc-900 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all hover:shadow-sm">
-            <div className="aspect-video w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800 relative">
-              <img
-                src="/assets/sql-ace.png"
-                alt="SQLAce project"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
-                SQLAce
-              </h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
-                A platform for mastering SQL for beginners, and also help with
-                interview questions. Still in the kitchen
-              </p>
-              <a
-                href="https://sql-ace.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-              >
-                Visit Site →
-              </a>
-            </div>
-          </div>
-
-          <div className="group border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden bg-zinc-50 dark:bg-zinc-900 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all hover:shadow-sm">
-            <div className="aspect-video w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800 relative">
-              <img
-                src="/assets/linspo.png"
-                alt="Linspo UI project"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
-                Linspo UI
-              </h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
-                An open source component library for data scientists, analysts,
-                and visualization specialists
-              </p>
-              <div className="flex gap-4">
-                <a
-                  href="https://linspo-ui.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-                >
-                  Visit Site →
-                </a>
-                <a
-                  href="https://github.com/jchiwaii/Linspo-UI"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-                >
-                  Source Code →
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="group border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden bg-zinc-50 dark:bg-zinc-900 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all hover:shadow-sm">
-            <div className="aspect-video w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800 relative">
-              <img
-                src="/assets/content-filter.jpg"
-                alt="Safe Browse Content Filter"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
-                Safe Browse
-              </h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
-                Chrome based content filter extension that blocks for obscene
-                language and replaces common words with patterns too.
-              </p>
-              <div className="flex gap-4">
-                <a
-                  href="https://chromewebstore.google.com/detail/safe-browse-content-filte/iipiknfekcemmookpphbkdiabdaiipje?authuser=1&hl=en"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-                >
-                  Visit Extension →
-                </a>
-                <a
-                  href="https://github.com/jchiwaii/content-filter-extension"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-                >
-                  Source Code →
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="group border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden bg-zinc-50 dark:bg-zinc-900 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all hover:shadow-sm">
-            <div className="aspect-video w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800 relative">
-              <img
-                src="/assets/concrete-ui.png"
-                alt="Concrete UI neo-brutalism component library"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
-                Concrete UI
-              </h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
-                A neo-brutalism modern component library with bold, raw
-                aesthetics and unapologetic design for building striking user
-                interfaces.
-              </p>
-              <div className="flex gap-4">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-                >
-                  Visit Site →
-                </a>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-                >
-                  Source Code →
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Data Projects */}
-      <div className="my-16">
-        <h2 className="mb-8 text-2xl font-bold tracking-tight">
-          Data Projects
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="group border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden bg-zinc-50 dark:bg-zinc-900 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all hover:shadow-sm">
-            <div className="aspect-video w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800 relative">
-              <img
-                src="/assets/cbk.png"
-                alt="CBK Data Analysis project"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
-                CBK Data Analysis
-              </h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
-                Analysis of Kenyan economic situation using Central Bank of
-                Kenya data, built with Python.
-              </p>
-              <div className="flex gap-4">
-                <a
-                  href="https://cbk-data-project.onrender.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-                >
-                  View Dashboard →
-                </a>
-                <a
-                  href="https://medium.com/@chiwai.kiriba/the-shilling-the-strain-and-the-dream-kenyas-economy-in-numbers-2dd273d03d05"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-                >
-                  Read Report →
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="group border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden bg-zinc-50 dark:bg-zinc-900 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all hover:shadow-sm">
-            <div className="aspect-video w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800 relative">
-              <img
-                src="/assets/kcse2025.png"
-                alt="KCSE 2025 Analysis project"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
-                KCSE 2025 Analysis
-              </h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
-                KCSE results analysis dashboard built with Next.js and Recharts
-                for interactive data visualization.
-              </p>
-              <div className="flex gap-4">
-                <a
-                  href="https://kcse-2025.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-                >
-                  View Dashboard →
-                </a>
-                <a
-                  href="https://github.com/jchiwaii/kcse-2025"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-                >
-                  Source Code →
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="group border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden bg-zinc-50 dark:bg-zinc-900 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all hover:shadow-sm">
-            <div className="aspect-video w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800 relative">
-              <img
-                src="/assets/time-series.jpeg"
-                alt="Time Series Library project"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
-                Time Series Library
-              </h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
-                Building a time series library with rust for timeseries
-                things/models like ARIMA, regression, all that. Code in
-                progress.
-              </p>
-              <a
-                href="https://github.com/jchiwaii/timeseries"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-              >
-                View Code →
-              </a>
-            </div>
-          </div>
-
-          <div className="group border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden bg-zinc-50 dark:bg-zinc-900 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all hover:shadow-sm">
-            <div className="aspect-video w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800 relative">
-              <img
-                src="/assets/forecast.png"
-                alt="ARIMA Weather Forecast project"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
-                ARIMA Weather Forecast
-              </h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
-                Time series forecasting of Nairobi's temperature using ARIMA
-                model, predicting weather patterns for the next 10 days.
-              </p>
-              <div className="flex gap-4">
-                <a
-                  href="https://medium.com/@chiwai.kiriba/what-nairobis-weather-taught-me-about-time-series-forecasting-aaade4711b62"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-                >
-                  Read Report →
-                </a>
-                <a
-                  href="https://github.com/jchiwaii/ARIMA-Weather-Forecast"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-                >
-                  Source Code →
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="group border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden bg-zinc-50 dark:bg-zinc-900 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all hover:shadow-sm">
-            <div className="aspect-video w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800 relative">
-              <img
-                src="/assets/kcse.png"
-                alt="KCSE Analysis 2024 project"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
-                KCSE Analysis 2024
-              </h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
-                Interactive dashboard analyzing KCSE 2024 results in Kenya,
-                built with Python, deployed on Streamlit.
-              </p>
-              <div className="flex gap-4">
-                <a
-                  href="https://kcse-analysis.streamlit.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-                >
-                  View Dashboard →
-                </a>
-                <a
-                  href="https://github.com/jchiwaii/kcse-analysis"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-                >
-                  Source Code →
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="group border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden bg-zinc-50 dark:bg-zinc-900 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all hover:shadow-sm">
-            <div className="aspect-video w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800 relative">
-              <img
-                src="/assets/afcon.png"
-                alt="AFCON Visualization project"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
-                AFCON Visualization
-              </h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
-                Interactive racing bar graph visualization, showcasing how
-                Senegal won their historic first Africa Cup of Nations title.
-              </p>
-              <div className="flex gap-4">
-                <a
-                  href="https://afcon-eta.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-                >
-                  View Viz →
-                </a>
-                <a
-                  href="https://github.com/jchiwaii/afcon"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-                >
-                  Source Code →
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Web3 Projects */}
-      <div className="my-16">
-        <h2 className="mb-8 text-2xl font-bold tracking-tight">
-          Web3 Projects
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="group border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden bg-zinc-50 dark:bg-zinc-900 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all hover:shadow-sm">
-            <div className="aspect-video w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800 relative">
-              <img
-                src="/assets/crepe.png"
-                alt="CREPE meme coin project"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
-                CREPE (BNB Meme Coin)
-              </h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
-                CREPE Coin - BNB Chain meme coin website. The next SHIB?
-              </p>
-              <a
-                href="https://crepebnb.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-              >
-                Visit Site →
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Web2 Projects */}
-      <div className="my-16">
-        <h2 className="mb-8 text-2xl font-bold tracking-tight">
-          Web2 Projects
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="group border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden bg-zinc-50 dark:bg-zinc-900 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all hover:shadow-sm">
-            <div className="aspect-video w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800 relative">
-              <img
-                src="/assets/sada.png"
-                alt="Beatrice Sada portfolio"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
-                Beatrice Sada Portfolio
-              </h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
-                Personal portfolio for Beatrice Sada built with Next.js and
-                Tailwind, showcasing engineering experience and projects.
-              </p>
-              <div className="flex gap-4">
-                <a
-                  href="https://beatrice-sada.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-                >
-                  Visit Site →
-                </a>
-                <a
-                  href="https://github.com/jchiwaii/sada-porfolio"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-                >
-                  Source Code →
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="group border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden bg-zinc-50 dark:bg-zinc-900 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all hover:shadow-sm">
-            <div className="aspect-video w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800 relative">
-              <img
-                src="/assets/bloodline.png"
-                alt="Bloodline blood donation platform"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
-                Bloodline
-              </h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
-                Fullstack blood donation management system connecting donors
-                with recipients through an admin-approved workflow.
-              </p>
-              <div className="flex gap-4">
-                <a
-                  href="https://blood-donations-indol.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-                >
-                  Visit Site →
-                </a>
-                <a
-                  href="https://github.com/jchiwaii/blood-donations"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-                >
-                  Source Code →
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="group border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden bg-zinc-50 dark:bg-zinc-900 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all hover:shadow-sm">
-            <div className="aspect-video w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800 relative">
-              <img
-                src="/assets/chatty.png"
-                alt="Chatty messaging app"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
-                Chatty
-              </h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
-                A fullstack, realtime messaging app featuring instant messaging
-                and a modern, responsive interface for seamless chat
-                communication.
-              </p>
-              <div className="flex gap-4">
-                <a
-                  href="https://chatty-fullstack.vercel.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-                >
-                  Visit Site →
-                </a>
-                <a
-                  href="https://github.com/jchiwaii/chatty-fullstack"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-                >
-                  Source Code →
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="group border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden bg-zinc-50 dark:bg-zinc-900 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all hover:shadow-sm">
-            <div className="aspect-video w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800 relative">
-              <img
-                src="/assets/netflix.png"
-                alt="Netflix Clone project"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
-                Netflix Clone
-              </h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
-                A video streaming web app powered by TMDB API, featuring a
-                modern UI and responsive design.
-              </p>
-              <div className="flex gap-4">
-                <a
-                  href="https://ck-gpt.web.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-                >
-                  Visit Site →
-                </a>
-                <a
-                  href="https://github.com/jchiwaii/netflixCK"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-                >
-                  Source Code →
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="group border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden bg-zinc-50 dark:bg-zinc-900 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all hover:shadow-sm">
-            <div className="aspect-video w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800 relative">
-              <img
-                src="/assets/kanga.png"
-                alt="Kanga project"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-lg font-bold mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
-                Kanga
-              </h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
-                A bespoke tailoring website celebrating Swahili elegance with
-                modern design.
-              </p>
-              <div className="flex gap-4">
-                <a
-                  href="https://kanga.netlify.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-                >
-                  Visit Site →
-                </a>
-                <a
-                  href="https://github.com/jchiwaii/kanga"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-medium text-zinc-900 dark:text-zinc-100 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-                >
-                  Source Code →
-                </a>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

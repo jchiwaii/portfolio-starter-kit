@@ -131,20 +131,25 @@ const projectRows = [
   },
 ];
 
+const byName = (a: { name: string }, b: { name: string }) =>
+  a.name.localeCompare(b.name);
+
 const homeProjectGroups = [
   {
     title: "Interesting Things I Am Building",
-    items: projectRows.filter(
-      (project) => project.section === "Ongoing" || project.section === "Web3"
-    ),
+    items: projectRows.filter((project) => project.section === "Ongoing").sort(byName),
   },
   {
     title: "Data Projects",
-    items: projectRows.filter((project) => project.section === "Data"),
+    items: projectRows.filter((project) => project.section === "Data").sort(byName),
   },
   {
     title: "Web2 Projects",
-    items: projectRows.filter((project) => project.section === "Web2"),
+    items: projectRows.filter((project) => project.section === "Web2").sort(byName),
+  },
+  {
+    title: "Web3",
+    items: projectRows.filter((project) => project.section === "Web3").sort(byName),
   },
 ];
 
@@ -152,7 +157,10 @@ export default function Page() {
   const year = new Date().getFullYear();
 
   return (
-    <section id="home" className="bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
+    <section
+      id="home"
+      className="bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100"
+    >
       <div className="mx-auto w-full max-w-[1440px] px-6 md:px-10">
         <div className="border-b border-zinc-200 dark:border-zinc-800 md:relative md:h-[679px]">
           <div className="grid items-center gap-6 pt-4 md:absolute md:left-0 md:right-0 md:top-4 md:grid-cols-[1fr_191px_1fr] md:gap-[33px] md:pt-0">
@@ -212,7 +220,7 @@ export default function Page() {
 
           <div className="mt-10 flex flex-row items-center justify-between gap-6 py-6 md:absolute md:left-0 md:right-0 md:top-[556px] md:mt-0 md:py-0">
             <h2 className="text-4xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-100 md:text-5xl">
-              About Me.
+              . . .
             </h2>
             <div className="flex items-center gap-7">
               <span className="h-[54px] w-[54px] shrink-0 rounded-full bg-zinc-300 dark:bg-zinc-700" />
@@ -231,7 +239,10 @@ export default function Page() {
         </div>
       </div>
 
-      <div id="about" className="bg-white font-mono text-[#23262f] dark:bg-zinc-950 dark:text-zinc-100">
+      <div
+        id="about"
+        className="bg-white font-mono text-[#23262f] dark:bg-zinc-950 dark:text-zinc-100"
+      >
         <div className="mx-auto w-full max-w-[1440px] px-6 py-16 md:px-[150px] md:pb-[56px] md:pt-[96px]">
           <div className="mx-auto flex w-full max-w-[1130px] flex-col gap-10 md:gap-[84px]">
             <div className="h-[2px] w-full max-w-[1120px] bg-[#e6e8ec] dark:bg-zinc-800" />
@@ -239,7 +250,9 @@ export default function Page() {
             <div className="flex flex-col gap-12 md:gap-[64px]">
               <div className="flex flex-col gap-5 md:w-[1130px] md:flex-row md:items-start md:justify-between">
                 <h2 className="max-w-[640px] text-[34px] leading-[1.03] tracking-[-0.03em] md:text-[56px]">
-                  <span className="block text-[#23262f] dark:text-zinc-100">Minimalist in Chief</span>
+                  <span className="block text-[#23262f] dark:text-zinc-100">
+                    Minimalist in Chief
+                  </span>
                 </h2>
                 <p className="text-[24px] leading-none text-[#272727] dark:text-zinc-300 md:pt-1 md:text-[32px]">
                   ©{year}
@@ -262,8 +275,8 @@ export default function Page() {
                       hype. Sometimes I write, sometimes I code, other times I
                       am behind a lens, and most times I enjoy my own company.
                       Open to long-term meaningful projects across data, AI,
-                      web2, and web3. Ardent love of African literature.
-                      Perfect mind. Excellent spirit. I love math a lot.
+                      web2, and web3. Ardent love of African literature. Perfect
+                      mind. Excellent spirit. I love math a lot.
                     </p>
                     <p className="text-[16px] leading-[1.6] text-[#667085] dark:text-zinc-400 md:text-[18px] md:leading-[1.5]">
                       Chief vibe coder with powerful benchmarks agains the best
