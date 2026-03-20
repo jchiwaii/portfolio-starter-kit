@@ -61,7 +61,7 @@ export default function ContactPage() {
 
   return (
     <section className="bg-white font-mono text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 pt-16">
-      <div className="mx-auto w-full max-w-[1440px] px-6 py-16 md:px-[150px] md:pb-[56px] md:pt-[96px]">
+      <div className="mx-auto w-full max-w-[1440px] px-6 py-16 md:px-[100px] md:pb-[56px] md:pt-[96px] lg:px-[150px]">
         <div className="mx-auto flex w-full max-w-[1130px] flex-col gap-10 md:gap-[84px]">
           <div className="h-[2px] w-full bg-zinc-200 dark:bg-zinc-800" />
 
@@ -69,12 +69,12 @@ export default function ContactPage() {
             <h1 className="text-[34px] leading-[1.03] tracking-[-0.03em] text-zinc-900 dark:text-zinc-100 md:text-[56px]">
               . . .
             </h1>
-            <p className="text-[24px] leading-none text-zinc-400 dark:text-zinc-600 md:pt-1 md:text-[32px]">
+            <p className="text-[24px] leading-none text-zinc-400 dark:text-zinc-500 md:pt-1 md:text-[32px]" style={{ display: 'block' }}>
               ©{year}
             </p>
           </div>
 
-          <div className="md:ml-[96px] md:max-w-[643px]">
+          <div className="lg:ml-[96px] lg:max-w-[643px]">
             <div className="flex flex-col gap-3">
               <p className="mb-6 text-[14px] leading-[1.7] text-zinc-500 dark:text-zinc-400">
                 My digital footprint.
@@ -88,12 +88,12 @@ export default function ContactPage() {
                   rel="noopener noreferrer"
                   className="group flex items-center justify-between border-b border-zinc-100 py-4 transition-colors last:border-b-0 hover:border-zinc-300 dark:border-zinc-800 dark:hover:border-zinc-700"
                 >
-                  <div className="flex items-center gap-4 text-zinc-500 dark:text-zinc-400 group-hover:text-zinc-900 dark:group-hover:text-zinc-100 transition-colors">
+                  <div className="flex items-center gap-3 text-zinc-500 dark:text-zinc-400 group-hover:text-zinc-900 dark:group-hover:text-zinc-100 transition-colors md:gap-4">
                     {item.icon}
                     <span className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
                       {item.label}
                     </span>
-                    <span className="text-xs text-zinc-400 dark:text-zinc-600">
+                    <span className="hidden text-xs text-zinc-400 dark:text-zinc-600 sm:inline">
                       {item.handle}
                     </span>
                   </div>

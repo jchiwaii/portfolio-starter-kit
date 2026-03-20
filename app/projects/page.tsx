@@ -179,7 +179,7 @@ export default function ProjectsPage() {
 
   return (
     <section className="bg-white font-mono text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 pt-16">
-      <div className="mx-auto w-full max-w-[1440px] px-6 py-16 md:px-[150px] md:pb-[56px] md:pt-[96px]">
+      <div className="mx-auto w-full max-w-[1440px] px-6 py-16 md:px-[100px] md:pb-[56px] md:pt-[96px] lg:px-[150px]">
         <div className="mx-auto flex w-full max-w-[1130px] flex-col gap-10 md:gap-[84px]">
 
           <div className="h-[2px] w-full bg-zinc-200 dark:bg-zinc-800" />
@@ -188,12 +188,12 @@ export default function ProjectsPage() {
             <h1 className="text-[34px] leading-[1.03] tracking-[-0.03em] text-zinc-900 dark:text-zinc-100 md:text-[56px]">
               Projects
             </h1>
-            <p className="text-[24px] leading-none text-zinc-400 dark:text-zinc-600 md:pt-1 md:text-[32px]">
+            <p className="text-[24px] leading-none text-zinc-400 dark:text-zinc-500 md:pt-1 md:text-[32px]" style={{ display: 'block' }}>
               ©{year}
             </p>
           </div>
 
-          <div className="md:ml-[96px]">
+          <div className="lg:ml-[96px]">
             <ProjectsAccordion sections={sections} />
           </div>
 

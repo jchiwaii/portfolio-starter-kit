@@ -13,13 +13,11 @@ const navItems = [
 export function BottomNav() {
   const pathname = usePathname();
 
-  if (pathname === "/") return null;
-
   return (
     <div className="fixed top-0 left-0 right-0 z-50 border-b border-zinc-200 bg-white/80 backdrop-blur-md dark:border-zinc-800 dark:bg-zinc-950/80">
-      <div className="mx-auto flex w-full max-w-[1440px] items-center justify-between px-6 py-4 md:px-[150px]">
+      <div className="mx-auto flex w-full max-w-[1440px] items-center justify-between px-6 py-3 md:px-[100px] md:py-4 lg:px-[150px]">
         <ThemeToggle />
-        <nav className="flex items-center gap-6 font-mono text-sm">
+        <nav className="flex items-center gap-4 font-mono text-sm md:gap-6">
           {navItems.map((item) => {
             const isActive = item.exact
               ? pathname === "/"

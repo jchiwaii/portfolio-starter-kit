@@ -1,13 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-import { ThemeToggle } from "./components/theme-toggle";
 import { ProjectAccordion } from "./components/project-accordion";
-
-const heroNavLinks = [
-  { name: "Home", href: "#home", hash: true },
-  { name: "About", href: "#about", hash: true },
-  { name: "Projects", href: "/projects", hash: false },
-];
 
 const projectRows = [
   {
@@ -159,81 +152,42 @@ export default function Page() {
   return (
     <section
       id="home"
-      className="bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100"
+      className="bg-white pt-16 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100"
     >
       <div className="mx-auto w-full max-w-[1440px] px-6 md:px-10">
         <div className="border-b border-zinc-200 dark:border-zinc-800 md:relative md:h-[679px]">
-          <div className="grid items-center gap-6 pt-4 md:absolute md:left-0 md:right-0 md:top-4 md:grid-cols-[1fr_191px_1fr] md:gap-[33px] md:pt-0">
-            <p className="font-sans text-[clamp(4rem,11vw,9.5rem)] font-semibold leading-[0.9] tracking-tight text-zinc-900 dark:text-zinc-100">
-              ©{year}
-            </p>
-            <div className="relative h-[118px] w-[160px] justify-self-start overflow-hidden md:h-[141px] md:w-[191px] md:justify-self-center">
-              <img
-                src="/assets/hero.jpg"
-                alt="Hero"
-                className="h-full w-full object-cover grayscale contrast-125 brightness-90 transition duration-700 hover:scale-105 hover:grayscale-0"
-              />
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-black/25 via-transparent to-white/10 mix-blend-multiply" />
-            </div>
-            <h1 className="justify-self-start text-[clamp(4rem,11vw,9.5rem)] font-semibold leading-[0.9] tracking-tight text-zinc-900 dark:text-zinc-100 md:justify-self-end">
+          <div className="flex items-center justify-center pt-4 md:absolute md:left-0 md:right-0 md:top-4 md:pt-0">
+            <h1 className="text-[clamp(4rem,11vw,9.5rem)] font-semibold leading-[0.9] tracking-tight text-zinc-900 dark:text-zinc-100">
               CHIWAI
             </h1>
           </div>
 
-          <div className="mt-7 grid gap-4 py-3 text-lg leading-none text-zinc-700 dark:text-zinc-300 md:absolute md:left-0 md:right-0 md:top-[208px] md:mt-0 md:grid-cols-[1fr_auto_1fr] md:items-center md:py-0">
-            <div className="font-mono">
-              <ThemeToggle />
-            </div>
-
+          <div className="mt-7 py-3 md:absolute md:left-0 md:right-0 md:top-[208px] md:mt-0 md:flex md:justify-center md:py-0">
             <a
               href="mailto:chiwai.kiriba@gmail.com"
-              className="font-mono text-zinc-700 transition-colors hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+              className="truncate font-mono text-sm text-zinc-700 transition-colors hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 md:text-lg"
             >
               📮 chiwai.kiriba@gmail.com
             </a>
-
-            <nav className="flex items-center gap-3 font-mono md:justify-end">
-              {heroNavLinks.map((item, index) => (
-                <div key={item.name} className="flex items-center gap-3">
-                  {item.hash ? (
-                    <a
-                      href={item.href}
-                      className="font-mono text-zinc-500 transition-colors hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
-                    >
-                      {item.name}
-                    </a>
-                  ) : (
-                    <Link
-                      href={item.href}
-                      className="font-mono text-zinc-500 transition-colors hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
-                    >
-                      {item.name}
-                    </Link>
-                  )}
-                  {index < heroNavLinks.length - 1 ? (
-                    <span className="text-zinc-400 dark:text-zinc-600">|</span>
-                  ) : null}
-                </div>
-              ))}
-            </nav>
           </div>
 
-          <div className="mt-10 flex flex-row items-center justify-between gap-6 py-6 md:absolute md:left-0 md:right-0 md:top-[556px] md:mt-0 md:py-0">
+          <div className="mt-10 flex flex-col gap-6 py-6 md:absolute md:left-0 md:right-0 md:top-[556px] md:mt-0 md:flex-row md:items-center md:justify-between md:gap-6 md:py-0">
             <h2 className="text-4xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-100 md:text-5xl">
               . . .
             </h2>
-            <div className="flex items-center gap-7">
-              <span className="h-[54px] w-[54px] shrink-0 rounded-full bg-zinc-300 dark:bg-zinc-700" />
-              <p className="max-w-[600px] font-mono text-lg leading-tight text-zinc-800 dark:text-zinc-300">
+            <div className="flex items-start gap-4 md:items-center md:gap-7">
+              <span className="h-[42px] w-[42px] shrink-0 rounded-full bg-zinc-300 dark:bg-zinc-700 md:h-[54px] md:w-[54px]" />
+              <p className="font-mono text-base leading-tight text-zinc-800 dark:text-zinc-300 md:max-w-[600px] md:text-lg">
                 Fulltime founder, part-time developer, professional learner,
                 avid thinker, and pure math connoisseur.
               </p>
             </div>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 text-xl font-semibold tracking-tight text-zinc-900 transition-colors hover:text-zinc-600 dark:text-zinc-100 dark:hover:text-zinc-400"
+              className="inline-flex items-center gap-2 text-lg font-semibold tracking-tight text-zinc-900 transition-colors hover:text-zinc-600 dark:text-zinc-100 dark:hover:text-zinc-400 md:text-xl"
             >
-              Start A Project <ArrowRight size={24} strokeWidth={2.2} />
+              Let&apos;s Talk <ArrowRight size={20} strokeWidth={2.2} className="md:hidden" />
+              <ArrowRight size={24} strokeWidth={2.2} className="hidden md:block" />
             </Link>
           </div>
         </div>
@@ -243,24 +197,24 @@ export default function Page() {
         id="about"
         className="bg-white font-mono text-[#23262f] dark:bg-zinc-950 dark:text-zinc-100"
       >
-        <div className="mx-auto w-full max-w-[1440px] px-6 py-16 md:px-[150px] md:pb-[56px] md:pt-[96px]">
+        <div className="mx-auto w-full max-w-[1440px] px-6 py-16 md:px-[100px] md:pb-[56px] md:pt-[96px] lg:px-[150px]">
           <div className="mx-auto flex w-full max-w-[1130px] flex-col gap-10 md:gap-[84px]">
             <div className="h-[2px] w-full max-w-[1120px] bg-[#e6e8ec] dark:bg-zinc-800" />
 
             <div className="flex flex-col gap-12 md:gap-[64px]">
-              <div className="flex flex-col gap-5 md:w-[1130px] md:flex-row md:items-start md:justify-between">
+              <div className="flex flex-col gap-5 md:flex-row md:items-start md:justify-between">
                 <h2 className="max-w-[640px] text-[34px] leading-[1.03] tracking-[-0.03em] md:text-[56px]">
                   <span className="block text-[#23262f] dark:text-zinc-100">
                     Minimalist in Chief
                   </span>
                 </h2>
-                <p className="text-[24px] leading-none text-[#272727] dark:text-zinc-300 md:pt-1 md:text-[32px]">
+                <p className="text-[24px] leading-none text-zinc-400 dark:text-zinc-500 md:pt-1 md:text-[32px]" style={{ display: 'block' }}>
                   ©{year}
                 </p>
               </div>
 
               <div className="w-full max-w-[1120px]">
-                <div className="md:ml-[96px] md:max-w-[643px]">
+                <div className="lg:ml-[96px] lg:max-w-[643px]">
                   <div className="flex flex-col gap-6 md:gap-8">
                     <p className="text-[34px] leading-none text-[#23262f] dark:text-zinc-100 md:text-[44px]">
                       01
@@ -292,9 +246,9 @@ export default function Page() {
       </div>
 
       <div id="work" className="bg-white font-mono dark:bg-zinc-950">
-        <div className="mx-auto w-full max-w-[1440px] px-6 pb-20 pt-6 md:px-[150px] md:pb-28 md:pt-8">
+        <div className="mx-auto w-full max-w-[1440px] px-6 pb-20 pt-6 md:px-[100px] md:pb-28 md:pt-8 lg:px-[150px]">
           <div className="mx-auto flex w-full max-w-[1130px] flex-col">
-            <div className="mb-10 md:ml-[96px] md:max-w-[643px]">
+            <div className="mb-10 lg:ml-[96px] lg:max-w-[643px]">
               <p className="text-[34px] leading-none text-[#23262f] dark:text-zinc-100 md:text-[44px]">
                 02
               </p>
@@ -305,7 +259,7 @@ export default function Page() {
 
             <ProjectAccordion groups={homeProjectGroups} />
 
-            <div className="mt-12 flex flex-wrap items-center gap-4 md:ml-[96px]">
+            <div className="mt-12 flex flex-wrap items-center gap-4 lg:ml-[96px]">
               <Link
                 href="/projects"
                 className="inline-flex items-center gap-2 rounded-full border border-zinc-900 px-5 py-2 text-sm font-medium text-zinc-900 transition-colors hover:bg-zinc-900 hover:text-white dark:border-zinc-100 dark:text-zinc-100 dark:hover:bg-zinc-100 dark:hover:text-zinc-900"

@@ -18,7 +18,7 @@ export function ProjectAccordion({ groups }: { groups: Group[] }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <div className="border-y border-zinc-200 dark:border-zinc-800 md:ml-[96px] md:max-w-[1024px]">
+    <div className="border-y border-zinc-200 dark:border-zinc-800 lg:ml-[96px] lg:max-w-[1024px]">
       {groups.map((group, i) => (
         <details
           key={group.title}
@@ -46,7 +46,7 @@ export function ProjectAccordion({ groups }: { groups: Group[] }) {
                   href={project.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group/project relative block py-4 pr-2 transition-colors hover:bg-zinc-50 dark:hover:bg-zinc-900/50 md:pr-44"
+                  className="group/project relative block py-4 pr-2 transition-colors hover:bg-zinc-50 dark:hover:bg-zinc-900/50 lg:pr-36"
                 >
                   <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400 md:text-base">
                     <span className="font-semibold text-zinc-900 dark:text-zinc-100">

@@ -3,6 +3,12 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+@media (max-width: 767px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
 :root {
   --font-sans: var(--font-geist-sans);
   --font-heading: var(--font-geist-sans);

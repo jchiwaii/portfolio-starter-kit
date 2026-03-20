@@ -46,7 +46,7 @@ export function ProjectsAccordion({ sections }: { sections: Section[] }) {
             </span>
           </summary>
 
-          <div className="grid grid-cols-2 gap-3 border-t border-zinc-100 pb-6 pt-4 dark:border-zinc-800 md:grid-cols-3 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-3 border-t border-zinc-100 pb-6 pt-4 dark:border-zinc-800 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {section.items.map((project) => (
               <div
                 key={project.name}
