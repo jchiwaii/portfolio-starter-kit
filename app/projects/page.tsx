@@ -34,7 +34,7 @@ const sections = [
       },
       {
         name: "Safe Browse",
-        image: "/assets/content-filter.jpg",
+        image: "/assets/filter.png",
         description: "Chrome extension for safer browsing and language filtering.",
         links: [
           { label: "Extension", href: "https://chromewebstore.google.com/detail/safe-browse-content-filte/iipiknfekcemmookpphbkdiabdaiipje?authuser=1&hl=en" },
@@ -43,7 +43,7 @@ const sections = [
       },
       {
         name: "Concrete UI",
-        image: "/assets/concrete-ui.png",
+        image: "/assets/concrete.png",
         description: "Neo-brutalism component library with bold, raw aesthetics.",
         links: [
           { label: "Visit", href: "#" },
@@ -73,6 +73,12 @@ const sections = [
           { label: "Report", href: "https://medium.com/@chiwai.kiriba/what-nairobis-weather-taught-me-about-time-series-forecasting-aaade4711b62" },
           { label: "Code", href: "https://github.com/jchiwaii/ARIMA-Weather-Forecast" },
         ],
+      },
+      {
+        name: "Kenya Job Market Analysis",
+        image: "/assets/myjobmag.png",
+        description: "Analysis of 60,000 MyJobMag Kenya listings across roles, degrees, remote work, and AI demand.",
+        links: [{ label: "Dashboard", href: "https://job-market-analyzer-lime.vercel.app/" }],
       },
       {
         name: "CBK Data Analysis",

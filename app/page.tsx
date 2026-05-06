@@ -35,8 +35,15 @@ const projectRows = [
     section: "Ongoing",
     name: "Safe Browse",
     href: "https://chromewebstore.google.com/detail/safe-browse-content-filte/iipiknfekcemmookpphbkdiabdaiipje?authuser=1&hl=en",
-    image: "/assets/content-filter.jpg",
+    image: "/assets/filter.png",
     detail: "Chrome extension for safer browsing and language filtering.",
+  },
+  {
+    section: "Data",
+    name: "Kenya Job Market Analysis",
+    href: "https://job-market-analyzer-lime.vercel.app/",
+    image: "/assets/myjobmag.png",
+    detail: "Analysis of 60,000 MyJobMag Kenya listings across roles, degrees, remote work, and AI demand.",
   },
   {
     section: "Data",
