@@ -240,7 +240,7 @@ export default function Page() {
                       mind. Excellent spirit. I love math a lot.
                     </p>
                     <p className="text-[16px] leading-[1.6] text-[#667085] dark:text-zinc-400 md:text-[18px] md:leading-[1.5]">
-                      Chief vibe coder with powerful benchmarks agains the best
+                      Chief vibe coder with powerful benchmarks against the best
                       of AI models. I write, sometimes. What else? I am here to
                       take AI&apos;s job.
                     </p>

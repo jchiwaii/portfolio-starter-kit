@@ -25,7 +25,7 @@
   },
   "name": "portfolio-starter-kit",
   "version": "1.0.0",
-  "description": "This is a porfolio site template complete with a blog. Includes:",
+  "description": "This is a portfolio site template complete with a blog. Includes:",
   "main": "postcss.config.js",
   "author": "",
   "license": "ISC"

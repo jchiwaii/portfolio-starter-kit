@@ -45,10 +45,7 @@ const sections = [
         name: "Concrete UI",
         image: "/assets/concrete.png",
         description: "Neo-brutalism component library with bold, raw aesthetics.",
-        links: [
-          { label: "Visit", href: "#" },
-          { label: "Code", href: "#" },
-        ],
+        links: [],
       },
     ],
   },
