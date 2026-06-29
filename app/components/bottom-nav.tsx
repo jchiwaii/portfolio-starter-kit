@@ -2,34 +2,40 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ThemeToggle } from "./theme-toggle";
+import { BrandLockup } from "./brand-mark";
 
 const navItems = [
-  { href: "/", label: "Home", exact: true },
-  { href: "/projects", label: "Projects" },
-  { href: "/contact", label: "Contact" },
+  { href: "/", label: "1ST", exact: true },
+  { href: "/#domains", label: "2ND", exact: false },
+  { href: "/info", label: "INFO", exact: false },
+  { href: "/projects", label: "PROJECTS", exact: false },
 ];
 
 export function BottomNav() {
   const pathname = usePathname();
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 border-b border-zinc-200 bg-white/80 backdrop-blur-md dark:border-zinc-800 dark:bg-zinc-950/80">
-      <div className="mx-auto flex w-full max-w-[1440px] items-center justify-between px-6 py-3 md:px-[100px] md:py-4 lg:px-[150px]">
-        <ThemeToggle />
-        <nav className="flex items-center gap-4 font-mono text-sm md:gap-6">
+    <header className="fixed left-0 right-0 top-0 z-50 bg-white/90 backdrop-blur-md">
+      <div className="mx-auto flex h-16 w-full max-w-[1920px] items-center justify-between px-6 md:px-12 lg:px-14">
+        <Link href="/" aria-label="Chiwai home">
+          <BrandLockup />
+        </Link>
+
+        <nav className="flex items-center gap-4 font-mono text-sm font-semibold uppercase md:gap-8">
           {navItems.map((item) => {
             const isActive = item.exact
-              ? pathname === "/"
-              : pathname.startsWith(item.href);
+              ? pathname === item.href
+              : item.href !== "/#domains" && pathname.startsWith(item.href);
+
             return (
               <Link
                 key={item.href}
                 href={item.href}
+                aria-current={isActive ? "page" : undefined}
                 className={
                   isActive
-                    ? "font-semibold text-zinc-900 dark:text-zinc-100"
-                    : "text-zinc-400 transition-colors hover:text-zinc-900 dark:text-zinc-600 dark:hover:text-zinc-100"
+                    ? "text-black"
+                    : "text-black/35 transition-colors hover:text-black"
                 }
               >
                 {item.label}
@@ -38,6 +44,6 @@ export function BottomNav() {
           })}
         </nav>
       </div>
-    </div>
+    </header>
   );
 }

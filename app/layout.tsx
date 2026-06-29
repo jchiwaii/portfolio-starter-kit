@@ -15,11 +15,11 @@ export const metadata: Metadata = {
     template: "%s | chiwai",
   },
   description:
-    "The portfolio of John Chiwai, an actuarial graduate and data professional specializing in full-stack development and Gen AI.",
+    "The portfolio of John Chiwai, organized by data, web, AI, fullstack, and mobile problem domains.",
   openGraph: {
     title: "John Chiwai | Portfolio",
     description:
-      "The portfolio of John Chiwai, an actuarial graduate and data professional specializing in full-stack development and Gen AI.",
+      "The portfolio of John Chiwai, organized by data, web, AI, fullstack, and mobile problem domains.",
     url: baseUrl,
     siteName: "chiwai | Portfolio",
     locale: "en_US",
@@ -46,19 +46,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      suppressHydrationWarning
-      className={cx(GeistSans.variable, GeistMono.variable)}
-    >
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(){try{var s=localStorage.getItem('theme');var d=document.documentElement;if(s==='dark'||(!s&&window.matchMedia('(prefers-color-scheme:dark)').matches)){d.classList.add('dark')}else{d.classList.remove('dark')}}catch(e){}})()`,
-          }}
-        />
-      </head>
-      <body className="flex min-h-screen flex-col bg-white font-sans antialiased dark:bg-zinc-950 dark:text-zinc-100">
+    <html lang="en" className={cx(GeistSans.variable, GeistMono.variable)}>
+      <body className="flex min-h-screen flex-col bg-white font-sans text-black antialiased">
         <main className="flex-1">{children}</main>
         <Footer />
         <BottomNav />
