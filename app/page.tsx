@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Plus } from "lucide-react";
 import { BrandMark } from "./components/brand-mark";
 import { PlaceholderMedia } from "./components/placeholder-media";
@@ -7,7 +6,7 @@ import { domains } from "lib/portfolio-data";
 const colorDots = ["#d8ebff", "#efe6ff", "#dff7df", "#f4f4ef"];
 
 const serviceLine =
-  "Data Analysis / Data Science / Frontend Development / Fullstack Projects / AI Projects / Mobile Apps / Dashboards / Product Systems / Research / Interfaces / Automation";
+  "Data Analysis / Data Science / Frontend Development / Fullstack Systems / AI Systems / Mobile Apps / Dashboards / Product Systems / Research / Interfaces / Automation";
 
 function SmallWorkMark() {
   return (
@@ -132,10 +131,7 @@ function ServicesArrow() {
 
 function WorkRow({ domain }: { domain: (typeof domains)[number] }) {
   return (
-    <Link
-      href={`/projects/${domain.slug}`}
-      className="grid gap-0 py-4 md:grid-cols-[minmax(0,1fr)_minmax(320px,640px)]"
-    >
+    <div className="grid gap-0 py-4 md:grid-cols-[minmax(0,1fr)_minmax(320px,640px)]">
       <div className="relative pt-6">
         <span className="pointer-events-none absolute inset-x-0 top-0 h-5 rounded-t-[10px] border-x border-t border-black md:border-r-0" />
         <div className="grid gap-4 md:grid-cols-[minmax(0,1fr)_128px]">
@@ -162,7 +158,7 @@ function WorkRow({ domain }: { domain: (typeof domains)[number] }) {
           className="min-h-[216px] md:min-h-[272px]"
         />
       </div>
-    </Link>
+    </div>
   );
 }
 
@@ -240,10 +236,9 @@ export default function Page() {
           <div className="relative pt-6 md:px-8 lg:pr-24">
             <span className="pointer-events-none absolute inset-x-0 top-0 h-5 rounded-t-[10px] border-x border-t border-black" />
             <p className="mb-8 max-w-[760px] font-mono text-[8px] leading-[16px] text-black">
-              Most days I am moving between data, interfaces, product questions,
-              writing, and small software systems. The rhythm is simple:
-              understand the problem, make the work clearer, then turn it into
-              something useful enough to ship.
+              Nothing is too hard to crack. I&apos;m driven by chronic curiosity
+              and a passion for telling stories through code, pictures and data.
+              Building scalable creative solutions that go beyond the hype.
             </p>
             <p className="max-w-[976px] text-[24px] font-semibold leading-[40px] text-black md:text-[32px] md:leading-[48px]">
               {serviceLine}

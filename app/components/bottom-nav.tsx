@@ -7,7 +7,6 @@ const navItems = [
   { href: "/", label: "1ST" },
   { href: "/#domains", label: "2ND" },
   { href: "/info", label: "INFO" },
-  { href: "/projects", label: "PROJECTS" },
 ];
 
 export function BottomNav() {

@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { ArrowUpRight, Mail } from "lucide-react";
-import { domains } from "lib/portfolio-data";
 
 export const metadata: Metadata = {
   title: "Info",
@@ -32,42 +30,16 @@ export default function InfoPage() {
           <div className="md:pt-5">
             <p className="max-w-[900px] font-mono text-base leading-relaxed text-black/70 md:text-lg">
               I am Chiwai: a builder who moves across data, software, AI, and
-              product thinking. I care about projects that make a confusing
-              thing clearer, a slow workflow faster, or a decision easier to
-              defend.
+              product thinking. I care about work that makes a confusing thing
+              clearer, a slow workflow faster, or a decision easier to defend.
             </p>
             <p className="mt-6 max-w-[900px] font-mono text-base leading-relaxed text-black/70 md:text-lg">
-              This portfolio is structured around problem domains instead of a
-              loose pile of links. Open a domain, read the project notes, inspect
-              the screenshots, and follow the live links where they exist.
+              Nothing is too hard to crack. I am driven by chronic curiosity and
+              a passion for telling stories through code, pictures and data,
+              building scalable creative solutions that go beyond the hype.
             </p>
           </div>
         </header>
-
-        <section className="grid gap-10 border-b border-black py-10 md:grid-cols-[minmax(260px,0.42fr)_minmax(0,1fr)]">
-          <h2 className="text-[clamp(2.2rem,5vw,5rem)] font-semibold uppercase leading-[0.95]">
-            Domains
-          </h2>
-          <div className="grid gap-3 md:grid-cols-2">
-            {domains.map((domain) => (
-              <Link
-                key={domain.slug}
-                href={`/projects/${domain.slug}`}
-                className="group border border-black/25 p-4 transition-colors hover:border-black hover:bg-black/[0.03]"
-              >
-                <p className="mb-3 font-mono text-xs text-black/50">
-                  {domain.index}
-                </p>
-                <h3 className="text-2xl font-semibold uppercase leading-none">
-                  {domain.title}
-                </h3>
-                <p className="mt-4 font-mono text-sm leading-relaxed text-black/60">
-                  {domain.summary}
-                </p>
-              </Link>
-            ))}
-          </div>
-        </section>
 
         <section className="grid gap-10 py-10 md:grid-cols-[minmax(260px,0.42fr)_minmax(0,1fr)]">
           <div>
@@ -98,4 +70,3 @@ export default function InfoPage() {
     </section>
   );
 }
-
