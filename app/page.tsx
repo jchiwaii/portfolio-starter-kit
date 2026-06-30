@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Plus } from "lucide-react";
 import { BrandMark } from "./components/brand-mark";
 import { PlaceholderMedia } from "./components/placeholder-media";
@@ -131,7 +132,10 @@ function ServicesArrow() {
 
 function WorkRow({ domain }: { domain: (typeof domains)[number] }) {
   return (
-    <div className="grid gap-0 py-4 md:grid-cols-[minmax(0,1fr)_minmax(320px,640px)]">
+    <Link
+      href={`/projects/${domain.slug}`}
+      className="grid gap-0 py-4 md:grid-cols-[minmax(0,1fr)_minmax(320px,640px)]"
+    >
       <div className="relative pt-6">
         <span className="pointer-events-none absolute inset-x-0 top-0 h-5 rounded-t-[10px] border-x border-t border-black md:border-r-0" />
         <div className="grid gap-4 md:grid-cols-[minmax(0,1fr)_128px]">
@@ -158,7 +162,7 @@ function WorkRow({ domain }: { domain: (typeof domains)[number] }) {
           className="min-h-[216px] md:min-h-[272px]"
         />
       </div>
-    </div>
+    </Link>
   );
 }
 
