@@ -6,6 +6,7 @@ import { BrandLockup } from "./brand-mark";
 const navItems = [
   { href: "/", label: "1ST" },
   { href: "/#domains", label: "2ND" },
+  { href: "/about", label: "ABOUT" },
   { href: "/info", label: "INFO" },
 ];
 

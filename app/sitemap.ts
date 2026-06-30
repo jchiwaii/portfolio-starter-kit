@@ -3,7 +3,7 @@ import { domains, projects } from "lib/portfolio-data";
 export const baseUrl = "https://chiwai.vercel.app";
 
 export default async function sitemap() {
-  const staticRoutes = ["", "/info", "/contact"];
+  const staticRoutes = ["", "/about", "/info", "/contact"];
   const domainRoutes = domains.map((domain) => `/projects/${domain.slug}`);
   const projectRoutes = projects.map(
     (project) => `/projects/${project.domainSlug}/${project.slug}`,
