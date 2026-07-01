@@ -181,29 +181,6 @@ export const projects: PortfolioProject[] = [
     image: "/assets/cbk.png",
   },
   {
-    slug: "kcse-2025-analysis",
-    domainSlug: "data-insights",
-    name: "KCSE 2025 Analysis",
-    year: "2025",
-    kicker: "Education data dashboard",
-    summary:
-      "Interactive analysis of KCSE result patterns with charts and exploratory views.",
-    note:
-      "The dashboard gives students, parents, and observers a clearer way to explore performance patterns instead of relying on scattered claims.",
-    problem:
-      "National exam results generate many claims, but the useful patterns can be hard to see without a focused interface.",
-    approach:
-      "I structured the results into chart-ready data, built views for comparison, and prioritized simple interactions that help users scan outcomes quickly.",
-    outcome:
-      "The dashboard gives students, parents, and observers a clearer way to explore performance patterns.",
-    stack: ["Next.js", "Charts", "Data modeling", "TypeScript"],
-    links: [
-      { label: "Dashboard", href: "https://kcse-2025.vercel.app/" },
-      { label: "Code", href: "https://github.com/jchiwaii/kcse-2025" },
-    ],
-    image: "/assets/kcse2025.png",
-  },
-  {
     slug: "arima-weather-forecast",
     domainSlug: "data-insights",
     name: "ARIMA Weather Forecast",
@@ -228,49 +205,6 @@ export const projects: PortfolioProject[] = [
       { label: "Code", href: "https://github.com/jchiwaii/ARIMA-Weather-Forecast" },
     ],
     image: "/assets/forecast.png",
-  },
-  {
-    slug: "afcon-visualization",
-    domainSlug: "data-insights",
-    name: "AFCON Visualization",
-    year: "2025",
-    kicker: "Sports data storytelling",
-    summary:
-      "A race-bar visualization that turns AFCON outcomes into a moving story.",
-    note:
-      "Tournament histories are easier to feel when movement, momentum, and ranking shifts are visible together.",
-    problem:
-      "Tournament histories are easier to feel when movement, momentum, and ranking shifts are visible together.",
-    approach:
-      "I shaped the AFCON data into an animation-friendly format and built a focused visual story around outcomes.",
-    outcome:
-      "The result is a lightweight visual piece that makes the tournament history easier to compare and remember.",
-    stack: ["JavaScript", "Visualization", "Data storytelling"],
-    links: [
-      { label: "Visit", href: "https://afcon-eta.vercel.app/" },
-      { label: "Code", href: "https://github.com/jchiwaii/afcon" },
-    ],
-    image: "/assets/afcon.png",
-  },
-  {
-    slug: "time-series-library",
-    domainSlug: "data-insights",
-    name: "Time Series Library",
-    year: "2025",
-    kicker: "Forecasting tools",
-    summary:
-      "A Rust library experiment for time-series models and forecasting workflows.",
-    note:
-      "I used the build to understand forecasting internals beyond notebooks and think about reusable analytical tooling.",
-    problem:
-      "I wanted to understand forecasting internals beyond notebooks and move closer to reusable tooling.",
-    approach:
-      "I explored model structure, typed APIs, and how forecasting utilities can be represented in a systems language.",
-    outcome:
-      "The work sharpened my understanding of statistical modeling, performance, and API design for analytical tools.",
-    stack: ["Rust", "Forecasting", "Library design"],
-    links: [{ label: "Code", href: "https://github.com/jchiwaii/timeseries" }],
-    image: "/assets/time-series.jpeg",
   },
   {
     slug: "linspo-ui",
