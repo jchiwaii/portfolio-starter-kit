@@ -16,6 +16,8 @@ type DomainPageProps = {
 
 const colorDots = ["#d8ebff", "#efe6ff", "#dff7df", "#f4f4ef"];
 
+export const dynamicParams = false;
+
 function SmallWorkMark() {
   return (
     <svg
@@ -62,7 +64,9 @@ function ProjectImage({ project }: { project: PortfolioProject }) {
         alt={`${project.name} screenshot`}
         fill
         sizes="(min-width: 1024px) 31vw, (min-width: 768px) 45vw, 100vw"
-        className="scale-100 object-contain"
+        className={`object-contain ${
+          project.domainSlug === "data-insights" ? "scale-110" : "scale-100"
+        }`}
       />
     </div>
   );

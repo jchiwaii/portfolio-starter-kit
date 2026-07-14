@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="mx-auto flex w-full max-w-[1920px] justify-center">
         <div className="flex gap-4 font-mono text-[16px] leading-none text-black">
           <a href="https://github.com/jchiwaii" target="_blank" rel="noopener noreferrer">
-            Github
+            GitHub
           </a>
           <span>/</span>
           <a
@@ -12,7 +12,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Linkedin
+            LinkedIn
           </a>
           <span>/</span>
           <a href="mailto:chiwai.kiriba@gmail.com">Email</a>

@@ -188,10 +188,10 @@ export default function Page() {
         id="first"
         className="mx-auto flex min-h-[640px] w-full max-w-[1920px] items-center justify-center px-6 pt-16 md:min-h-[800px] md:px-12"
       >
-        <div className="flex w-fit items-center justify-center gap-8 md:gap-16">
-          <BrandMark className="h-[96px] w-[96px] md:h-[240px] md:w-[240px]" />
-          <h1 className="text-center text-[80px] font-semibold leading-none text-black md:text-[224px]">
-            chi:wai<sup className="ml-2 align-top text-[40px] md:text-[72px]">©</sup>
+        <div className="flex w-fit items-center justify-center gap-4 md:gap-16">
+          <BrandMark className="h-[64px] w-[64px] md:h-[240px] md:w-[240px]" />
+          <h1 className="text-center text-[56px] font-semibold leading-none text-black md:text-[224px]">
+            chi:wai<sup className="ml-1 align-top text-[28px] md:ml-2 md:text-[72px]">©</sup>
           </h1>
         </div>
       </section>

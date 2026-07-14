@@ -17,6 +17,8 @@ type ProjectPageProps = {
 
 const colorDots = ["#d8ebff", "#efe6ff", "#dff7df", "#f4f4ef"];
 
+export const dynamicParams = false;
+
 function ProjectImage({
   project,
   priority = false,
