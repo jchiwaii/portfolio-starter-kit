@@ -33,7 +33,7 @@ function ProjectImage({
         alt={`${project.name} screenshot`}
         fill
         sizes="(min-width: 1024px) 1120px, 100vw"
-        className="scale-110 object-contain"
+        className="object-contain"
         priority={priority}
       />
     </div>
