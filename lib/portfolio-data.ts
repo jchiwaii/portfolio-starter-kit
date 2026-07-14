@@ -37,7 +37,7 @@ export const domains: Domain[] = [
     index: "01",
     title: "Data & Insights",
     eyebrow: "Analysis, science, dashboards",
-    heroImage: "/assets/hero-images/data.jpg",
+    heroImage: "/assets/domains/data-insights.jpg",
     summary:
       "Messy datasets turned into practical stories, dashboards, forecasts, and decisions.",
     description:
@@ -57,7 +57,7 @@ export const domains: Domain[] = [
     index: "02",
     title: "Web Interfaces",
     eyebrow: "Frontend, UI systems, visual builds",
-    heroImage: "/assets/hero-images/web.jpg",
+    heroImage: "/assets/domains/web-interfaces.jpg",
     summary:
       "Fast interfaces that make products, tools, and ideas easier to use.",
     description:
@@ -77,7 +77,7 @@ export const domains: Domain[] = [
     index: "03",
     title: "Fullstack Systems",
     eyebrow: "Apps, workflows, databases",
-    heroImage: "/assets/hero-images/fullstack.jpg",
+    heroImage: "/assets/domains/fullstack-systems.jpg",
     summary:
       "Interfaces, data, auth, and backend logic connected into working products.",
     description:
@@ -97,7 +97,7 @@ export const domains: Domain[] = [
     index: "04",
     title: "AI Systems",
     eyebrow: "Automation, safety, intelligent tools",
-    heroImage: "/assets/hero-images/ai.jpg",
+    heroImage: "/assets/domains/ai-systems.jpg",
     summary:
       "Useful AI and automation patterns that reduce cognitive load.",
     description:
@@ -117,7 +117,7 @@ export const domains: Domain[] = [
     index: "05",
     title: "Mobile Apps",
     eyebrow: "Android, iOS, on-device products",
-    heroImage: "/assets/hero-images/mobile.jpg",
+    heroImage: "/assets/domains/mobile-apps.jpg",
     summary:
       "Mobile work for learning, utility, and everyday workflows.",
     description:
@@ -162,7 +162,7 @@ export const projects: PortfolioProject[] = [
         href: "https://medium.com/@chiwai.kiriba/how-i-built-a-dashboard-to-analyze-60k-job-listings-8a7222f01954?sharedUserId=chiwai.kiriba",
       },
     ],
-    image: "/assets/myjobmag.png",
+    image: "/assets/projects/data-insights/kenya-job-market-analysis.png",
   },
   {
     slug: "cbk-data-analysis",
@@ -188,7 +188,7 @@ export const projects: PortfolioProject[] = [
         href: "https://medium.com/@chiwai.kiriba/the-shilling-the-strain-and-the-dream-kenyas-economy-in-numbers-2dd273d03d05",
       },
     ],
-    image: "/assets/cbk.png",
+    image: "/assets/projects/data-insights/cbk-data-analysis.png",
   },
   {
     slug: "arima-weather-forecast",
@@ -214,7 +214,7 @@ export const projects: PortfolioProject[] = [
       },
       { label: "Code", href: "https://github.com/jchiwaii/ARIMA-Weather-Forecast" },
     ],
-    image: "/assets/forecast.png",
+    image: "/assets/projects/data-insights/arima-weather-forecast.png",
   },
   {
     slug: "linspo-ui",
@@ -237,7 +237,7 @@ export const projects: PortfolioProject[] = [
       { label: "Visit", href: "https://linspo-ui.vercel.app/" },
       { label: "Code", href: "https://github.com/jchiwaii/Linspo-UI" },
     ],
-    image: "/assets/linspo.png",
+    image: "/assets/projects/web-interfaces/linspo-ui.png",
   },
   {
     slug: "sqlace",
@@ -257,7 +257,7 @@ export const projects: PortfolioProject[] = [
       "The project gives learners a cleaner path into SQL practice and interview readiness.",
     stack: ["Next.js", "React", "Learning UX", "SQL"],
     links: [{ label: "Visit", href: "https://sql-ace.netlify.app/" }],
-    image: "/assets/sql-ace.png",
+    image: "/assets/projects/web-interfaces/sqlace.png",
   },
   {
     slug: "artify",
@@ -277,7 +277,7 @@ export const projects: PortfolioProject[] = [
       "The result is a direct, modern site for presenting creative work and converting attention into inquiries.",
     stack: ["Next.js", "Brand UI", "Responsive design"],
     links: [{ label: "Visit", href: "https://artifyy.online" }],
-    image: "/assets/artifyy.png",
+    image: "/assets/projects/web-interfaces/artify.png",
   },
   {
     slug: "kanga",
@@ -300,7 +300,7 @@ export const projects: PortfolioProject[] = [
       { label: "Visit", href: "https://kanga.netlify.app/" },
       { label: "Code", href: "https://github.com/jchiwaii/kanga" },
     ],
-    image: "/assets/kanga.png",
+    image: "/assets/projects/web-interfaces/kanga.png",
   },
   {
     slug: "concrete-ui",
@@ -320,7 +320,7 @@ export const projects: PortfolioProject[] = [
       "Concrete UI works as a visual sandbox for a stronger, more opinionated component language.",
     stack: ["React", "UI systems", "Design language"],
     links: [],
-    image: "/assets/concrete.png",
+    image: "/assets/projects/web-interfaces/concrete-ui.png",
   },
   {
     slug: "netflix-clone",
@@ -343,7 +343,7 @@ export const projects: PortfolioProject[] = [
       { label: "Visit", href: "https://ck-gpt.web.app/" },
       { label: "Code", href: "https://github.com/jchiwaii/netflixCK" },
     ],
-    image: "/assets/netflix.png",
+    image: "/assets/projects/web-interfaces/netflix-clone.png",
   },
   {
     slug: "oyaah",
@@ -363,7 +363,7 @@ export const projects: PortfolioProject[] = [
       "Oyaah helps users get the first layer of analysis faster so they can decide what questions to ask next.",
     stack: ["Fullstack", "Data profiling", "Dashboards", "Product UX"],
     links: [{ label: "Visit", href: "https://www.oyaah.cloud/" }],
-    image: "/assets/oyaah.png",
+    image: "/assets/projects/fullstack-systems/oyaah.png",
   },
   {
     slug: "bloodline",
@@ -386,7 +386,7 @@ export const projects: PortfolioProject[] = [
       { label: "Visit", href: "https://blood-donations-indol.vercel.app/" },
       { label: "Code", href: "https://github.com/jchiwaii/blood-donations" },
     ],
-    image: "/assets/bloodline.png",
+    image: "/assets/projects/fullstack-systems/bloodline.png",
   },
   {
     slug: "chatty",
@@ -409,7 +409,7 @@ export const projects: PortfolioProject[] = [
       { label: "Visit", href: "https://chatty-fullstack.vercel.app" },
       { label: "Code", href: "https://github.com/jchiwaii/chatty-fullstack" },
     ],
-    image: "/assets/chatty.png",
+    image: "/assets/projects/fullstack-systems/chatty.png",
   },
   {
     slug: "safe-browse",
@@ -435,7 +435,7 @@ export const projects: PortfolioProject[] = [
       },
       { label: "Code", href: "https://github.com/jchiwaii/content-filter-extension" },
     ],
-    image: "/assets/filter.png",
+    image: "/assets/projects/ai-systems/safe-browse.png",
   },
 ];
 
