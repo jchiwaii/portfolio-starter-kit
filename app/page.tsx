@@ -1,7 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Plus } from "lucide-react";
 import { BrandMark } from "./components/brand-mark";
-import { PlaceholderMedia } from "./components/placeholder-media";
 import { domains } from "lib/portfolio-data";
 
 const colorDots = ["#d8ebff", "#efe6ff", "#dff7df", "#f4f4ef"];
@@ -157,10 +157,15 @@ function WorkRow({ domain }: { domain: (typeof domains)[number] }) {
 
       <div className="relative pt-6 md:px-4">
         <span className="pointer-events-none absolute inset-x-0 top-0 h-5 rounded-t-[10px] border-x border-t border-black" />
-        <PlaceholderMedia
-          label={`${domain.title} image placeholder`}
-          className="min-h-[216px] md:min-h-[272px]"
-        />
+        <div className="relative aspect-[3/2] min-h-[216px] w-full overflow-hidden bg-[#c7c5ca] md:min-h-[272px]">
+          <Image
+            src={domain.heroImage}
+            alt={`${domain.title} hero image`}
+            fill
+            sizes="(min-width: 768px) 640px, 100vw"
+            className="object-cover"
+          />
+        </div>
       </div>
     </Link>
   );

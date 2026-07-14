@@ -8,6 +8,7 @@ export type Domain = {
   index: string;
   title: string;
   eyebrow: string;
+  heroImage: string;
   summary: string;
   description: string;
   services: string[];
@@ -36,6 +37,7 @@ export const domains: Domain[] = [
     index: "01",
     title: "Data & Insights",
     eyebrow: "Analysis, science, dashboards",
+    heroImage: "/assets/hero-images/data.jpg",
     summary:
       "Messy datasets turned into practical stories, dashboards, forecasts, and decisions.",
     description:
@@ -55,6 +57,7 @@ export const domains: Domain[] = [
     index: "02",
     title: "Web Interfaces",
     eyebrow: "Frontend, UI systems, visual builds",
+    heroImage: "/assets/hero-images/web.jpg",
     summary:
       "Fast interfaces that make products, tools, and ideas easier to use.",
     description:
@@ -74,6 +77,7 @@ export const domains: Domain[] = [
     index: "03",
     title: "Fullstack Systems",
     eyebrow: "Apps, workflows, databases",
+    heroImage: "/assets/hero-images/fullstack.jpg",
     summary:
       "Interfaces, data, auth, and backend logic connected into working products.",
     description:
@@ -93,6 +97,7 @@ export const domains: Domain[] = [
     index: "04",
     title: "AI Systems",
     eyebrow: "Automation, safety, intelligent tools",
+    heroImage: "/assets/hero-images/ai.jpg",
     summary:
       "Useful AI and automation patterns that reduce cognitive load.",
     description:
@@ -112,6 +117,7 @@ export const domains: Domain[] = [
     index: "05",
     title: "Mobile Apps",
     eyebrow: "Android, iOS, on-device products",
+    heroImage: "/assets/hero-images/mobile.jpg",
     summary:
       "Mobile work for learning, utility, and everyday workflows.",
     description:
@@ -136,20 +142,24 @@ export const projects: PortfolioProject[] = [
     year: "2026",
     kicker: "Labour market research",
     summary:
-      "An analysis of 60,000 MyJobMag Kenya listings to understand role demand, degree requirements, remote work, and visible AI demand.",
+      "A dashboard and technical report built from MyJobMag Kenya listings to understand role demand, experience, location, and hiring patterns.",
     note:
-      "The work asks what the Kenyan job market is actually rewarding, especially for graduates, career switchers, and people trying to make better career decisions.",
+      "I had a simple question: what does the Kenyan job market actually look like? The final dataset came out to 68,648 job listings.",
     problem:
-      "People in Kenya are making career decisions with noisy signals: tech hype, AI anxiety, remote-work assumptions, and frustration around entry-level roles. The project asks what the job market is actually rewarding.",
+      "I could not find a clean public dataset that answered the market questions I had, so the project became a full build: scrape the listings, store the data, and turn it into a dashboard people could explore.",
     approach:
-      "I organized more than a year of listings, grouped roles by field, checked education requirements, compared remote and hybrid roles, and built a dashboard so the patterns could be explored instead of only summarized.",
+      "I scraped MyJobMag with TypeScript, Cheerio, JSON-LD parsing, slug-based deduplication, and SQLite, then moved the deployed database to Turso so the Next.js dashboard could run cleanly on Vercel.",
     outcome:
-      "The analysis showed a market that is not primarily built for beginners, where sales and business development lead the field mix, degrees still matter heavily, and remote or hybrid roles remain a small slice of demand.",
-    stack: ["Python", "Pandas", "Dashboarding", "Research writing"],
+      "The finished app exposes fields, companies, locations, industries, trends, insights, and all jobs, while the write-up documents the scraping, database, deployment, and performance decisions behind it.",
+    stack: ["Next.js", "TypeScript", "Cheerio", "Turso", "Recharts"],
     links: [
       {
         label: "Dashboard",
         href: "https://job-market-analyzer-lime.vercel.app/",
+      },
+      {
+        label: "Full article",
+        href: "https://medium.com/@chiwai.kiriba/how-i-built-a-dashboard-to-analyze-60k-job-listings-8a7222f01954?sharedUserId=chiwai.kiriba",
       },
     ],
     image: "/assets/myjobmag.png",
@@ -161,20 +171,20 @@ export const projects: PortfolioProject[] = [
     year: "2025",
     kicker: "Macroeconomic analysis",
     summary:
-      "A dashboard and written analysis exploring Kenyan macroeconomic indicators through public CBK data.",
+      "A dashboard and written analysis connecting Kenya's GDP, debt, inflation, fiscal pressure, and public data into one economic story.",
     note:
-      "I cleaned the public data, shaped it for dashboard use, and wrote a plain-language breakdown of the story behind the numbers.",
+      "I wanted to perform a quick health check of the Kenyan economy's current status.",
     problem:
-      "Economic conversations often become abstract quickly. I wanted to make inflation, exchange rates, and other indicators easier to inspect and explain.",
+      "Economic conversations often become abstract quickly, so this project turns CBK indicators and supporting public sources into a clearer picture of Kenya's current economic strain.",
     approach:
-      "I cleaned the public data, shaped it for dashboard use, visualized the major movements, and wrote a plain-language breakdown of the story behind the numbers.",
+      "I used time-series trends, GDP movement, public debt, inflation, revenue, expenditure, and fiscal deficit views to make the macroeconomic story easier to inspect.",
     outcome:
-      "The project turned raw macroeconomic series into an accessible dashboard and article for readers who want context without losing the data.",
+      "The analysis points to cautious optimism: stable inflation and growth exist beside heavy debt servicing, tax pressure, and a long road toward the big national dream.",
     stack: ["Python", "Pandas", "Visualization", "Dashboards"],
     links: [
-      { label: "Dashboard", href: "https://cbk-data-project.onrender.com/" },
+      { label: "Dashboard", href: "https://cbk-data-project-production.up.railway.app/" },
       {
-        label: "Report",
+        label: "Full article",
         href: "https://medium.com/@chiwai.kiriba/the-shilling-the-strain-and-the-dream-kenyas-economy-in-numbers-2dd273d03d05",
       },
     ],
@@ -187,19 +197,19 @@ export const projects: PortfolioProject[] = [
     year: "2025",
     kicker: "Forecasting, time series",
     summary:
-      "A Nairobi weather forecasting project that uses ARIMA to reason about seasonal movement and prediction limits.",
+      "A Nairobi weather forecasting project using ARIMA to test how parameter choices affect temperature forecasts.",
     note:
-      "The project is both a forecast and a learning artifact about model assumptions, trend, seasonality, and what forecasting can responsibly claim.",
+      "I decided to try forecasting the local area weather with an ARIMA model.",
     problem:
-      "Forecasting looks magical from the outside, but the useful lesson is knowing what a model can and cannot tell you.",
+      "The weather dataset had more than 20 variables, so I focused on average temperature and used the project to understand stationarity, differencing, and forecast reliability.",
     approach:
-      "I cleaned weather observations, explored trend and seasonality, fitted ARIMA models, and documented the forecasting tradeoffs.",
+      "I compared an initial ARIMA (5, 1, 2) model with a grid-searched order, tracked MAE, MSE, and RMSE, then checked whether the forecasts looked realistic.",
     outcome:
-      "The project became both a forecast and a learning artifact about how time-series assumptions behave in practice.",
+      "The exercise showed that small changes in p, d, and q can shift the forecast meaningfully, and that visual inspection still matters beside metrics.",
     stack: ["Python", "ARIMA", "Time series", "Statistics"],
     links: [
       {
-        label: "Report",
+        label: "Full article",
         href: "https://medium.com/@chiwai.kiriba/what-nairobis-weather-taught-me-about-time-series-forecasting-aaade4711b62",
       },
       { label: "Code", href: "https://github.com/jchiwaii/ARIMA-Weather-Forecast" },

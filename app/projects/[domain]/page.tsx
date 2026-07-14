@@ -42,7 +42,12 @@ function SmallWorkMark() {
           <rect width="15" height="14" fill="white" />
         </clipPath>
         <clipPath id="domain-work-mark-inner">
-          <rect width="14.0286" height="14" fill="white" transform="translate(0.485718)" />
+          <rect
+            width="14.0286"
+            height="14"
+            fill="white"
+            transform="translate(0.485718)"
+          />
         </clipPath>
       </defs>
     </svg>
@@ -57,7 +62,7 @@ function ProjectImage({ project }: { project: PortfolioProject }) {
         alt={`${project.name} screenshot`}
         fill
         sizes="(min-width: 1024px) 31vw, (min-width: 768px) 45vw, 100vw"
-        className="object-contain"
+        className="scale-100 object-contain"
       />
     </div>
   );
@@ -65,7 +70,10 @@ function ProjectImage({ project }: { project: PortfolioProject }) {
 
 function ProjectCard({ project }: { project: PortfolioProject }) {
   return (
-    <Link href={`/projects/${project.domainSlug}/${project.slug}`} className="block">
+    <Link
+      href={`/projects/${project.domainSlug}/${project.slug}`}
+      className="block"
+    >
       <ProjectImage project={project} />
       <h2 className="mt-5 text-[24px] font-normal uppercase leading-none text-black md:text-[28px]">
         {project.name}
